@@ -1,10 +1,4 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome Inotila,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+ The last update to this file was: **September 1, 2021**
 
 ## Gitpod Reminders
 
@@ -36,73 +30,172 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 ------
 
-## Release History
+<img src="./assets/images/logo-yellow.jpg" width="320px">
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+To run a frontend (HTML, CSS, JavaScript only) application in Gitpod, in the terminal, type:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+python3 -m http.server
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+To run the webpage click on this link: <a href="https://by-ino-ati.herokuapp.com/" target="_blank">by_ino_ati</a>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+<img src="./assets/images/reponsive.png" width="700">
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+# by_ino_ati(Portfolio 4)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+This project is for my final submission for my forth milestone. The aim of the project is to code and deploy a responsive website using Java Script, python+ django, HTML and CSS. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## About by_ino_ati
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Is a web application where users can view and interact with art by artist Inotila Nghaamwa(the owner of the page). 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The site owner is an artist, and would like to offer users a platform where they can view and interact with his art work. The owner would like to keep adding features to the site and updating to increase the way in which site users can engage with the content.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+The users are primarily art enthusists, art collectors, and other peopler in the artist commuinity.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Value
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+users can view and interact with his art work by liking and commenting on it.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+In addition, the UI is easy to understand and navigate. Furthermore, the site offers the user interaction, alerting the users on wconsequence of their actions are.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Potential features (before starting)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+1. a grid view of art works
+2. like content and view number of likes a post has.
+3. Comment on post and view comments from other users and the amount of comments a post recieved.
+4. An easy to understand UI.
+5. An easy signup process to be authenticated.
+6. view detials about the art work.
+7. See the availabilty to purchase the art work
+8. live bids.
+9. Users will be able to bid on art works.
+10. Share button to allow users to share posts on other social medias.
+11. A booking page where site users can book artist for a commision.
 
-------
+## Actual Features (end product)
+1. Welcome/home page -
 
-## FAQ about the uptime script
+<img src="./assets/images/homepage.png" width="700">
 
-**Why have you added this script?**
+On this page the user is welcomed, and the tone/vibe of the game is set. From this page first-time users will be able to know that this is a game. 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+In addition, the home page offers navigation buttons that are simply titled in order for them to easily understand what exactly it is that the button will do/take them to. 
 
-**How will this affect me?**
+2. Play page - 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+<img src="./assets/images/gamepage.png" width="700">
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+This is where the game is played. The UI is simple and users should be able to clear identify the various elements of the page.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+The page has player and master score. These two elements are the total score keeper for the game. They update after every end of turn and re-set to zero when the game has come to an end. To show the increment of the score, it numbers font becomes bold for a few seconds when whoever’s turn it is has ended. 
 
-**So….?**
+In addition to the player and master score, there is a current score element. This keeps the score of the roll of whoever’s turn it is and re-sets to zero when their turn has come to an end. Furthermore, the current score background also switches colors to represent bonus or a zero score. I the player rolls a 500 and above the background-color becomes white. Id the player gets a score of zero, the background-color turns red. This is to give the player positive feedback when they have a bonus score, or let them know they got a bad score/zero.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+The page has dice images that show exactly what the player or the CPU got on each roll. And they are displayed on a wooden background to make the user feel like they are playing on a game board.
 
-**Can I opt out?**
+The page also has buttons for the game play. The roll dice button is where the player rolls for his/her turn. The keep dice button is how the play increments his/her total score, and the pass dice buttons starts the CPU/other players turn.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+3. Rule page - 
 
-**Anything more?**
+<img src="./assets/images/rulepage.png" width="700">
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+A page that has information about the rule of the game and how it is played.
 
----
+In addition, the rules page offers navigation buttons that are simply titled in order for them to easily understand what exactly it is that the button will do/take them to. 
 
-Happy coding!
+4. About page - 
+
+<img src="./assets/images/aboutpage.png" width="700">
+
+A page that has information about the games developer. And clearly states that copying this game is not permitted, as it is an original game by the developer.
+
+In addition, the about page offers navigation buttons that are simply titled in order for them to easily understand what exactly it is that the button will do/take them to. 
+
+
+
+4. Responsive feedback -
+
+<img src="./assets/images/feedback.png" width="700">
+
+All the buttons on the page have a hover feature that turns them green. However, most of the responsive features are found in the play page, some of these have already been mentioned in the above text. In addition to those that have already been mentioned, there is a pop-up to indicate who's turn it is. There is also a winner popup to show that the game has ended and announces the winner. The winner announcing popup also give the user an option to play again or return home. These features make the user feel less isolated.
+
+
+5. Logo - 
+
+<img src="./assets/images/game-logo.png"  width="200">
+
+A nice logo that also serves as a home button.
+
+6. Footer and social media links-
+
+<img src="./assets/images/footer.png" width="700">
+
+A footer to keep social media links. These links are links that open in new tabs so as to not take the user away from the website.
+
+The social media links are useful for the users because they encourage the user to get in contact with the developer on other platforms (Facebook, Instagram and YouTube).
+
+
+## Future Features
+1. 
+
+## Testing
+
+
+## Bugs and fixes
+
+
+### Solved bugs
+
+## Unfixed bugs
+
+## Validator testing
+
+Html - No errors returned from the official w3c validator
+
+CSS - No errors returned from the official (jigsaw) validator
+
+<img src="./assets/images/validator-one.png" width="700">
+
+<img src="./assets/images/validator-two.png" width="700">
+
+<img src="./assets/images/validator-three.png" width="700">
+
+<img src="./assets/images/validator-four.png" width="700">
+
+Accessibility - Confirmation that the colors content is easy to read and the sight is accessible  by running it through lighthouse in DevTools.
+
+<img src="./assets/images/lighthouse.png" width="700">
+
+Furthermore, I have ran my JavaScript file through jshint and have no major issues apart from ES6 warnings. No errors are reported in the DevTools either.
+
+## User testing and feedback
+
+
+
+## Deployment
+This project has been deployed on heroku. The live link to project is: <a href="https://by-ino-ati.herokuapp.com/" target="_blank">by_ino_ati</a>
+The steps to deploy this project are:
+
+From the GitHub repository navigate to the settings option.
+
+Select the Main Branch, from the source section.
+
+And after selecting the Main Branch, provide the link to the website.
+
+
+## Credits/Reference 
+This work is the original work of Inotila Nghaamwa, however the following resources were used to supplement:
+
+### Code
+I used similar coding approaches to that which was used for the love maths run-through. Particularly the event listeners. Furthermore, i used the social media links from the love-running run-through and made a few small changes to it. 
+
+### Media
+All images used are the property of Inotila Nghaamwa, I created them images using adobe software. The sound clip used was downloaded on a site that offers free sound clips.
+
+### Credits 
+
+Content -
+Text-Written by Inotila Nghaamwa.
+
+Images - All images used are the property of Inotila Nghaamwa.
