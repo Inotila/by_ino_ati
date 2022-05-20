@@ -11,6 +11,7 @@ class Post(models.Model):
     featured_image = CloudinaryField('image', default='placeholder')
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(User, related_name='art_likes', blank=True)
+    size =  models.CharField(max_length=100, unique=False, default='cm')
 
     class Meta:
         ordering: ['-completed_on']
