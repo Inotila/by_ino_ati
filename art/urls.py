@@ -11,5 +11,4 @@ urlpatterns = [
     path('templates/paintings.html', views.PaintingPage.as_view(), name='painting'),
     path('templates/ink.html', views.InkPage.as_view(), name='ink'),
     path('templates/pencil.html', views.PencilPage.as_view(), name='pencil')
-
 ]
