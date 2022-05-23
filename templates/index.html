@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
+{% load static %}
 <div class="container-fluid">
     <div class="row">
         <!-- home page content  -->
         <h1 class="text-center welcome-text mt-4">Welcome to the art page of
             <br>
             Inotila Opoeli Nghaamwa</h1>
-            <div class="row">
-                <div class="image-container">
-                    <img src="/media/images/logoBlack.png" alt="logo">
+            <div class="row d-flex justify-content-center">
+                <div id="hero-image" class="image-container">
+                    <img src="{% static 'images/logoBlack.png' %}" alt="logo">
                 </div>
             </div>
     </div>

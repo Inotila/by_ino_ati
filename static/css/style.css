@@ -9,6 +9,12 @@ body {
 footer{
     font-size: 20px;
 }
+
+/* index page content */
+
+#hero-image{
+    width: 395.75px;
+}
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
@@ -23,10 +29,6 @@ footer{
 
 .light-bg {
     background-color: #fff;
-}
-
-.dark-bg {
-    background-color: #445261;
 }
 
 .main-bg {
