@@ -34,27 +34,27 @@
             </button>
             <div class="collapse navbar-collapse" id="toggleMobileMenu">
                 <ul class="navbar-nav ms-auto">
-                    <li>
+                    <li  class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
-                    <li>
+                    <li  class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'painting' %}">Paintings</a>
-                    </li>
+                    </li  class="nav-item">
                     <li>
                         <a class="nav-link active" aria-current="page" href="{% url 'ink' %}">Ink</a>
-                    </li>
+                    </li  class="nav-item">
                     <li>
                         <a class="nav-link active" aria-current="page" href="{% url 'pencil' %}">Pencil</a>
-                    </li>
+                    </li  class="nav-item">
                     {% if user.is_authenticated %}
-                    <li>
+                    <li  class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-                    </li>
+                    </li  class="nav-item">
                     {% else %}
-                    <li>
+                    <li  class="nav-item">
                         <a class="nav-link" href="{% url 'account_signup' %}">Sign-up</a>
                     </li>
-                    <li>
+                    <li  class="nav-item">
                         <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}
