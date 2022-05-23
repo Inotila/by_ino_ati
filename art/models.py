@@ -8,11 +8,11 @@ STATUS = ((0,"Draft"), (1,"Published"))
 class Post(models.Model):
     title = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100,  unique=True)
-    completed_on = models.DateTimeField(auto_now=False)
+    completed_on = models.DateField(auto_now=False)
     featured_image = CloudinaryField('image', default='placeholder')
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(User, related_name='art_likes', blank=True)
-    size =  models.CharField(max_length=100, unique=False, default='cm')
+    size = models.CharField(max_length=100, unique=False, default='cm')
 
     class Meta:
         ordering: ['-completed_on']
