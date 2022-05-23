@@ -23,12 +23,16 @@
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <div>
-                <a class="logo navbar-brand" href="">by_ino_ati</a>
+                <a class="logo navbar-brand" href="{% url 'home' %}">by_ino_ati</a>
             </div>
-            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
                 <ul>
                     <li>
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
@@ -42,10 +46,6 @@
                     <li>
                         <a class="nav-link active" aria-current="page" href="{% url 'pencil' %}">Pencil</a>
                     </li>
-                </ul>
-            </div>
-            <div class="container-fluid authentication">
-                <ul>
                     {% if user.is_authenticated %}
                     <li>
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
