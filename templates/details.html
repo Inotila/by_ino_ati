@@ -22,6 +22,9 @@
                         <button type="submit" name="user_art_like" value="{{post.slug}}"><p><i class="far fa-heart"></i></p></button>
                         {% endif %}
                     </form>
+                    {% else %}
+
+                    <span><p><i class="far fa-heart"></i></p></span>
                     <a href="{% url 'art_details' post.slug %}">
                         <h5 class="card-title text-center">Tile: {{ post.title }}</h5>
                     </a>
