@@ -29,7 +29,7 @@
                     </div>
                     <p>
                         {% if user.is_authenticated %}
-                        <h3>Join the Conversation:</h3>
+                        <h4 class="text-center">Join the Conversation:</h4>
                         <p>{{ user.username }} says:</p>
                         <form method="post">
                             {{ comment_form | crispy }}
