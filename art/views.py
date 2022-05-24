@@ -53,15 +53,15 @@ class ArtDetails(View):
         
         user_comments = CommentForm(data=request.POST)   
 
-        if comment_form.is_valid():
-            comment_form.instance.email = request.user.email
-            comment_form.instance.name = request.user.username
-            comment_form.instance.email = request.user.email
-            comment = comment_form.save(commit=False)
+        if user_comments.is_valid():
+            user_comments.instance.email = request.user.email
+            user_comments.instance.name = request.user.username
+            user_comments.instance.email = request.user.email
+            comment = user_comments.save(commit=False)
             comment.post = post
             comment.save()
         else:
-            comment_form = CommentForm()
+            user_comments = CommentForm()
 
         return render(
             request, 
