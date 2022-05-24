@@ -17,9 +17,9 @@
                     <form action="{% url 'art_like' post.slug %}" method="post">
                         {% csrf_token %}
                         {% if liked %}
-                        <button type="submit" name="user_art_like" value="{{post.slug}}"><p><i class="far fa-heart"></i></p></button>
+                        <button type="submit" name="user_art_like" value="{{post.slug}}"><p><i class="fas fa-heart"></i></p></button>
                         {% else %}
-    
+                        <button type="submit" name="user_art_like" value="{{post.slug}}"><p><i class="far fa-heart"></i></p></button>
                         {% endif %}
                     </form>
                     <a href="{% url 'art_details' post.slug %}">
