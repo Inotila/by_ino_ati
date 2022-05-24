@@ -1,29 +1,36 @@
 {% extends "base.html" %}
 {% block content %}
+{% load static %}
 <div class="container-fluid">
     <div class="row">
         <!-- Art post Column -->
         <h1 class="text-center welcome-text mt-4">Paintings</h1>
     </div>
-        <div class="col-12 mt-3 left">
-            <div class="row">
-                <div class="image-container">
-                    {% for post in post_list %}
-                    {% if "placeholder" in post.featured_image.url %}
-                    <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
-                    {% else %}
-                    <img src=" {{ post.featured_image.url }}">
-                    {% endif %}
-                    <p class="title">Tile: {{ post.title }}</p>
-                    {% if forloop.counter|divisibleby:3%}
+        <div class="row">
+            {% for post in post_list %}
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                            {% if "placeholder" in post.featured_image.url %}
+                            <img class="card-img-top"
+                                src="{% static 'images/logoblack.png' %}">
+                            {% else %}
+                            <img class="card-img-top" src="{{ post.featured_image.url }}">
+                            {% endif %}
+                            <div>
+                                <p class="title text-center">Tile: {{ post.title }}</p>
+                            </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                {% endif %}
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</div>
+                        {% if forloop.counter|divisibleby:3%}
+                    </div>
+                    <div class="row">
+                        {% endif %}
+                        {% endfor %}
 
-{%endblock%}
+                    </div>
+                </div>
+            </div>
+
+            {%endblock%}
