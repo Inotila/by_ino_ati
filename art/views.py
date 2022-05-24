@@ -38,7 +38,6 @@ class ArtDetails(View):
             {
                 "post": post,
                 "comments": comments,
-                "commented": False,
                 "liked": liked,
                 "Comment_form": CommentForm()
             },
@@ -70,7 +69,6 @@ class ArtDetails(View):
             {
                 "post": post,
                 "comments": comments,
-                "commented": True,
                 "liked": liked,
                 "Comment_form": CommentForm()
             },
