@@ -12,18 +12,16 @@
                 {% else %}
                 <img class="card-img-top" src="{{ post.featured_image.url }}">
                 {% endif %}
-                <form action="{% url 'art_like' post.slug %}" method="post">
-                    {% csrf_token %}
-                    {% liked %}
-
-                    {% else %}
-
-                    {% endif %}
-                </form>
-                {% endif %}
                 <div class="card-body d-flex justify-content-between mb-3">
                     {% if user.is_authenticated %}
-                    <p><i class="far fa-heart"></i></p>
+                    <form action="{% url 'art_like' post.slug %}" method="post">
+                        {% csrf_token %}
+                        {% if liked %}
+                        <button type="submit" name="user_art_like" value="{{post.slug}}"><p><i class="far fa-heart"></i></p></button>
+                        {% else %}
+    
+                        {% endif %}
+                    </form>
                     <a href="{% url 'art_details' post.slug %}">
                         <h5 class="card-title text-center">Tile: {{ post.title }}</h5>
                     </a>
