@@ -8,8 +8,8 @@
     </div>
     <div class="row">
         {% for post in post_list %}
-        <div class="col-4">
-            <div class="card">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mb-3">
                 <div class="card-body">
                     {% if "placeholder" in post.featured_image.url %}
                     <img class="card-img-top" src="{% static 'images/logoblack.png' %}">
