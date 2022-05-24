@@ -12,7 +12,9 @@
                 {% else %}
                 <img class="card-img-top" src="{{ post.featured_image.url }}">
                 {% endif %}
+                {% endif %}
                 <div class="card-body d-flex justify-content-between mb-3">
+                    {% if user.is_authenticated %}
                     <p><i class="far fa-heart"></i></p>
                     <a href="{% url 'art_details' post.slug %}">
                         <h5 class="card-title text-center">Tile: {{ post.title }}</h5>
