@@ -8,4 +8,5 @@ urlpatterns = [
     path('templates/ink.html', views.InkPage.as_view(), name='ink'),
     path('templates/pencil.html', views.PencilPage.as_view(), name='pencil'),
     path('<slug:slug>/', views.ArtDetails.as_view(),name='art_details'),
+    path('like/<slug:slug>', views.ArtLike.as_view(), name='art_like')
 ]
