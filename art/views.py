@@ -24,7 +24,8 @@ class PencilPage(generic.ListView):
 
 class ArtDetails(View):
 
-    def get(self,request, slug, *args, **kwargs):
+    def get(self, request, slug, *args, **kwargs):
+        
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.order_by('created_on')
@@ -39,11 +40,12 @@ class ArtDetails(View):
                 "post": post,
                 "comments": comments,
                 "liked": liked,
-                "Comment_form": CommentForm()
+                "user_comments": CommentForm()
             },
         )
 
-    def post(self,request, slug, *args, **kwargs):
+    def post(self, request, slug, *args, **kwargs):
+
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.order_by('created_on')
@@ -70,6 +72,6 @@ class ArtDetails(View):
                 "post": post,
                 "comments": comments,
                 "liked": liked,
-                "Comment_form": CommentForm()
+                "user_comments": CommentForm()
             },
         )

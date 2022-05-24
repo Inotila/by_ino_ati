@@ -32,11 +32,8 @@
                         <h4 class="text-center">Join the Conversation:</h4>
                         <p>{{ user.username }} says:</p>
                         <form method="post">
-                            {{ comment_form | crispy }}
+                            {{ user_comments| crispy }}
                             {% csrf_token %}
-                            <textarea name="comments" id="comments" class="w-75">
-leave your comment here...
-                        </textarea>
                             <button type="submit" class="btn">comment</button>
                         </form>
                         {% endif %}
