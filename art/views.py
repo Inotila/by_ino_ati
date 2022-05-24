@@ -42,3 +42,24 @@ class ArtDetails(View):
                 "Comment_form": CommentForm()
             },
         )
+
+  def post(self,request, slug, *args, **kwargs):
+        queryset = Post.objects.filter(status=1)
+        post = get_object_or_404(queryset, slug=slug)
+        comments = post.comments.order_by('created_on')
+        liked = False
+        if post.likes.filter(id=self.request.user.id).exists():
+            liked = True
+        
+        user_comments = CommentForm(data=request.POST)   
+
+        return render(
+            request, 
+            'details.html',
+            {
+                "post": post,
+                "comments": comments,
+                "liked": liked,
+                "Comment_form": CommentForm()
+            },
+        )
