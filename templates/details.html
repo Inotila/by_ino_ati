@@ -27,6 +27,17 @@
                     <div class="text-center">
                         <h3 class="mb-3 card-title">Comments</h3>
                     </div>
+                    {% for comment in comments %}
+                    <div class="comments" style="padding: 10px;">
+                        <p>
+                            {{ comment.name }}
+                            :
+                            {{ comment.body }}
+                            <span class=" text-muted">
+                                {{ comment.created_on }}
+                            </span>
+                    </div>
+                    {% endfor %}
                     <p>
                         {% if user.is_authenticated %}
                         <h4 class="text-center">Join the Conversation:</h4>
