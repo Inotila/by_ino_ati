@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from .models import Post
 from django.views.generic import TemplateView
+from .forms import CommentForm
 
 class HomePage(TemplateView):
     template_name = 'index.html'
@@ -37,6 +38,7 @@ class ArtDetails(View):
             {
                 "post": post,
                 "comments": comments,
-                "liked": liked
+                "liked": liked,
+                "Comment_form": CommentForm()
             },
         )
