@@ -28,12 +28,19 @@
                         <p><i class="far fa-solid fa-comment-dots"></i></p>
                         <h3 class="mb-3 card-title">Comments</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, sunt corrupti dignissimos
-                        voluptate
-                        maxime
-                        explicabo distinctio ab quae accusantium culpa quisquam nostrum. Aut obcaecati corrupti quidem
-                        beatae
-                        reiciendis quos aliquam.
+                    <p>
+                        {% if user.is_authenticated %}
+                        <h3>Join the Conversation:</h3>
+                        <p>{{ user.username }} says:</p>
+                        <form method="post">
+                            {{ comment_form | crispy }}
+                            {% csrf_token %}
+                            <textarea name="comments" id="comments" class="w-75">
+leave your comment here...
+                        </textarea>
+                            <button type="submit" class="btn">comment</button>
+                        </form>
+                        {% endif %}
                     </p>
                 </div>
             </div>
