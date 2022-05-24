@@ -38,6 +38,7 @@ class ArtDetails(View):
             {
                 "post": post,
                 "comments": comments,
+                "commented": False,
                 "liked": liked,
                 "Comment_form": CommentForm()
             },
@@ -60,6 +61,8 @@ class ArtDetails(View):
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
+        else:
+            comment_form = CommentForm()
 
         return render(
             request, 
@@ -67,6 +70,7 @@ class ArtDetails(View):
             {
                 "post": post,
                 "comments": comments,
+                "commented": True,
                 "liked": liked,
                 "Comment_form": CommentForm()
             },
