@@ -16,36 +16,12 @@ footer{
     width: 395.75px;
 }
 
-/* .home-btn-container{
-    width: 395.75px;
-} */
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
-}
-
 /* details page */
-
-#full-sized-card {
-    height: 90%;
-}
-
-.btn-signup {
-    background-color: #23BBBB;
-    color: #fff;
-}
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
     color: #23BBBB;
-}
-
-.link {
-    color: #23BBBB;
-    text-decoration: none;
 }
 
 .link:hover,
