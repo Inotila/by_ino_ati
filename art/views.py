@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404,reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
@@ -86,3 +86,5 @@ class ArtLike(View):
             post.likes.remove(request.user)
         else:
             post.likes.add(request.user)
+
+        return HttpResponseRedirect(reverse('arts_detail',args=[slug]))
