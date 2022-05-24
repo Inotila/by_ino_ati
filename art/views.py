@@ -87,4 +87,4 @@ class ArtLike(View):
         else:
             post.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('arts_detail',args=[slug]))
+        return HttpResponseRedirect(reverse('art_details', args=[slug]))
