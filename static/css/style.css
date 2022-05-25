@@ -6,3 +6,21 @@ body{
     max-width: 100%; 
     height:auto;
 }
+
+/* media queries */
+
+@media (max-width: 397px) {
+    .homepage-btn{
+        width:30% !important;
+        font-size:auto !important;
+        padding:0px !important;
+    }
+}
+
+@media (min-width: 398px) {
+    .homepage-btn{
+        width:30% !important;
+        font-size:auto !important;
+        padding:0px !important;
+    }
+}
