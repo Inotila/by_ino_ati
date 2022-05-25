@@ -35,6 +35,15 @@ body {
     bottom: 0;
 }
 
+.title_anchor{
+     text-decoration:none;
+    color:#000;
+}
+
+.post-title {
+    font-weight:500;
+}
+
 /* details template */
 
 
