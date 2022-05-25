@@ -40,8 +40,17 @@ body {
     color:#000;
 }
 
+.number-of-likes{
+    color:#4a4949;
+}
+
 .post-title {
     font-weight:500;
+}
+
+.fa-comment-dots, .fa-heart{
+     color: #000;
+    font-size:1.05rem;
 }
 
 /* details template */
