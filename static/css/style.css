@@ -1,5 +1,7 @@
 body {
     background-color: #f4f4f4;
+    min-height: 100vh;
+    position: relative;
 }
 
 /* header */
@@ -16,18 +18,21 @@ body {
 
 /* post page  */
 
-.post-card{
+.post-card {
     position: relative;
-    height:20rem;
-    width:100% !important;
+    height: 100%;
+    width: 100% !important;
 }
 
-.body-container{
+.post-image-container {
     position: absolute;
-    background-color: #993232;
-    max-height:3rem !important;
-    width:100%;
-    bottom:0;
+}
+
+.body-container {
+    background-color: #e2e6ed;
+    max-height: 3rem !important;
+    width: 100%;
+    bottom: 0;
 }
 
 /* details template */

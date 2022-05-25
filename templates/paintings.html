@@ -8,16 +8,20 @@
     </div>
     <div class="row g-3">
         {% for post in post_list %}
-        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-            <div class="card mb-3 w-75 post-card">
-                {% if "placeholder" in post.featured_image.url %}
-                <img class="card-img-top" src="{% static 'images/logoblack.png' %}">
-                {% else %}
-                <img class="card-img-top" src="{{ post.featured_image.url }}">
-                {% endif %}
+        <div class="col-12 mb-3 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card w-75 post-card">
+                <!-- <div class="post-image-container"> -->
+                    {% if "placeholder" in post.featured_image.url %}
+                    <img class="card-img post-image" src="{% static 'images/logoblack.png' %}">
+                    {% else %}
+                    <img class="card-img post-image" src="{{ post.featured_image.url }}">
+                    {% endif %}
+                <!-- </div> -->
                 <div class="card-body d-flex justify-content-between body-container">
                     <p><i class="far fa-heart"></i><span>{{ post.total_number_of_likes }}</span></p>
-                    <a href="{% url 'art_details' post.slug %}"><h5 class="card-title text-center">Tile: {{ post.title }}</h5></a>
+                    <a href="{% url 'art_details' post.slug %}">
+                        <h5 class="card-title text-center">Tile: {{ post.title }}</h5>
+                    </a>
                     <p><i class="far fa-solid fa-comment-dots"></i></p>
                 </div>
             </div>
