@@ -12,7 +12,7 @@
                 {% else %}
                 <img class="card-img" src="{{ post.featured_image.url }}">
                 {% endif %}
-                <div class="card-body d-flex justify-content-between mb-3 body-container">
+                <div class="card-body d-flex justify-content-between body-container-detail">
                     {% if user.is_authenticated %}
                     <form action="{% url 'art_like' post.slug %}" method="post">
                         {% csrf_token %}
