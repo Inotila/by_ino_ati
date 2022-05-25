@@ -18,11 +18,11 @@
                     {% endif %}
                 <!-- </div> -->
                 <div class="card-body d-flex justify-content-between body-container">
-                    <p><i class="far fa-heart"></i><span>{{ post.total_number_of_likes }}</span></p>
+                    <p><i class="far fa-heart like-icon"></i><span class="number-of-likes">{{ post.total_number_of_likes }}</span></p>
                     <a href="{% url 'art_details' post.slug %}">
-                        <h5 class="card-title text-center">{{ post.title }}</h5>
+                        <h5 class="card-title text-center post-title">{{ post.title }}</h5>
                     </a>
-                    <p><i class="far fa-solid fa-comment-dots"></i></p>
+                    <p><i class="far fa-solid fa-comment-dots comment-icon"></i></p>
                 </div>
             </div>
         </div>
