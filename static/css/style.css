@@ -1,5 +1,5 @@
-body{
-    background-color:#f4f4f4;
+body {
+    background-color: #f4f4f4;
 }
 
 /* header */
@@ -9,27 +9,35 @@ body{
 /* base template */
 
 /* home page  */
+#hero-image {
+    max-width: 100%;
+    height: auto;
+}
 
 /* post page  */
-#hero-image{
-    max-width: 100%; 
-    height:auto;
+
+.post-card{
+    height:20rem;
+    width:100% !important;
 }
+
+/* details template */
+
 
 /* media queries */
 
 @media (max-width: 397px) {
-    .homepage-btn{
-        width:30% !important;
-        font-size:auto !important;
-        padding:0px !important;
+    .homepage-btn {
+        width: 30% !important;
+        font-size: auto !important;
+        padding: 0px !important;
     }
 }
 
 @media (min-width: 398px) {
-    .homepage-btn{
-        width:30% !important;
-        font-size:auto !important;
-        padding:0px !important;
+    .homepage-btn {
+        width: 30% !important;
+        font-size: auto !important;
+        padding: 0px !important;
     }
 }
