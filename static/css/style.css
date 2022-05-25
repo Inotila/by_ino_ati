@@ -17,8 +17,17 @@ body {
 /* post page  */
 
 .post-card{
+    position: relative;
     height:20rem;
     width:100% !important;
+}
+
+.body-container{
+    position: absolute;
+    background-color: #993232;
+    max-height:3rem !important;
+    width:100%;
+    bottom:0;
 }
 
 /* details template */
