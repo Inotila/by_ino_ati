@@ -50,9 +50,9 @@
                     {% endfor %}
                     <p>
                         {% if user.is_authenticated %}
-                        <h4 class="text-center">Join the Conversation:</h4>
-                        <p>{{ user.username }} says:</p>
                         <form class="comment-form" method="post">
+                            <h4 class="text-center" style="text-align: center;">Join the Conversation:</h4>
+                            <p>{{ user.username }} says:</p>
                             {{ user_comments| crispy }}
                             {% csrf_token %}
                             <button type="submit" class="btn">comment</button>
