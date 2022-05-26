@@ -84,6 +84,11 @@ body {
     bottom: 0;
 }
 
+.card-img, .card-img-bottom, .card-img-top {
+    width: unset;
+    height: 100%;
+}
+
 /* media queries */
 
 @media (max-width: 397px) {

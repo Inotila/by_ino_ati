@@ -20,6 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('summernote/', include('django_summernote.urls')),
     path('', include('art.urls'), name='byinoati_urls'),
-    path('templates/index.html', include('art.urls'), name='home'),
+    path('art/', include('art.urls'), name='home'),
     path('accounts/', include('allauth.urls')),
 ]
