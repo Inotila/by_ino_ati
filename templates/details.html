@@ -24,7 +24,7 @@
                     </form>
                     {% else %}
 
-                    <span><p><i class="far fa-heart"></i></p></span>{{ post.total_number_of_likes }}
+                    <span><p><i class="far fa-heart"></i><span class="number-of-likes">{{ post.total_number_of_likes }}</span></p></span>
                     {% endif %}
                     <a href="{% url 'art_details' post.slug %}">
                         <h5 class="card-title text-center">Tile: {{ post.title }}</h5>
