@@ -69,6 +69,16 @@ body {
     bottom: 0;
 }
 
+#like-button{
+    border: none  !important;
+    background: transparent  !important;
+}
+
+#unlike-button{
+    border: none  !important;
+    background: transparent  !important;
+}
+
 /* media queries */
 
 @media (max-width: 397px) {
