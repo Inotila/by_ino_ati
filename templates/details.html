@@ -52,7 +52,7 @@
                         {% if user.is_authenticated %}
                         <h4 class="text-center">Join the Conversation:</h4>
                         <p>{{ user.username }} says:</p>
-                        <form method="post">
+                        <form class="comment-form" method="post">
                             {{ user_comments| crispy }}
                             {% csrf_token %}
                             <button type="submit" class="btn">comment</button>

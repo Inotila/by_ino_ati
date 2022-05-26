@@ -79,6 +79,11 @@ body {
     background: transparent  !important;
 }
 
+.comment-form{
+    position:absolute;
+    bottom: 0;
+}
+
 /* media queries */
 
 @media (max-width: 397px) {
