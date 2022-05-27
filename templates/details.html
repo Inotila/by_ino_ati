@@ -17,16 +17,23 @@
                     <form action="{% url 'art_like' post.slug %}" method="post">
                         {% csrf_token %}
                         {% if liked %}
-                        <button id="like-button" type="submit" name="user_art_like" value="{{post.slug}}"><p><i class="fas fa-heart"></i></p></button>{{ post.total_number_of_likes }}
+                        <button id="like-button" type="submit" name="user_art_like" value="{{post.slug}}">
+                            <p><i class="fas fa-heart"></i></p>
+                        </button>{{ post.total_number_of_likes }}
                         {% else %}
-                        <button id="unlike-button" type="submit" name="user_art_like" value="{{post.slug}}"><p><i class="far fa-heart"></i></p></button>{{ post.total_number_of_likes }}
+                        <button id="unlike-button" type="submit" name="user_art_like" value="{{post.slug}}">
+                            <p><i class="far fa-heart"></i></p>
+                        </button>{{ post.total_number_of_likes }}
                         {% endif %}
                     </form>
                     {% else %}
 
-                    <span><p><i class="far fa-heart"></i><span class="number-of-likes">{{ post.total_number_of_likes }}</span></p></span>
+                    <span>
+                        <p><i class="far fa-heart"></i><span
+                                class="number-of-likes">{{ post.total_number_of_likes }}</span></p>
+                    </span>
                     {% endif %}
-                        <h5 class="card-title text-center">{{ post.title }}</h5>
+                    <h5 class="card-title text-center">{{ post.title }}</h5>
                     <p><i class="far fa-solid fa-comment-dots"></i></p>
                 </div>
             </div>
@@ -46,8 +53,8 @@
                             <span class=" text-muted">
                                 {{ comment.created_on }}
                             </span>
-                        <button class="edit_delete_button"  id="edit-button" type="submit"><p><i class="fas fa-edit"></i></p></button>
-                        <button class="edit_delete_button" id="delete-button" type="submit"><p><i class="fas fa-trash-alt"></i></p></button>
+                            <a href="/edit/{{ comment.id }}"><i class="fas fa-edit"></i></a>
+                            <a href=""><i class="fas fa-trash-alt"></i></a>
                     </div>
                     {% endfor %}
                     <p>
