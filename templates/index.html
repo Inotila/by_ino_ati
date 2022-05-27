@@ -19,13 +19,12 @@
                     works found here were created by
                     him and their intellectual property belongs to him</p>
             </div>
+            <!-- home page buttons that link to other pages -->
             <div class="row d-flex justify-content-center text-center home-btn-container">
                 <div class="col">
                     <a href="{% url 'painting' %}" class="btn btn-dark homepage-btn">paintings</a>
-                    <button type="button" class="btn btn-dark homepage-btn"
-                        onclick="location.href='{% url 'ink' %}'">ink</button>
-                    <button type="button" class="btn btn-dark homepage-btn"
-                        onclick="location.href='{% url 'pencil' %}'">pencil</button>
+                    <a href="{% url 'ink' %}" class="btn btn-dark homepage-btn">ink</a>
+                    <a href="{% url 'pencil' %}" class="btn btn-dark homepage-btn">pencil</a>
                 </div>
             </div>
         </div>
