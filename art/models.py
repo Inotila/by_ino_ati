@@ -3,11 +3,13 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 
-STATUS = ((0,"Draft"), (1,"Published"))
+STATUS = ((0, "Draft"), (1, "Published"))
+TYPE_OF_ART = (("painting", "Painting"), ("ink", "Ink"), ("pencil", "Pencil"))
 
 class Post(models.Model):
     title = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100,  unique=True)
+    type = models.CharField(max_length=20, choices=TYPE_OF_ART)
     completed_on = models.DateField(auto_now=False)
     featured_image = CloudinaryField('image', default='placeholder')
     status = models.IntegerField(choices=STATUS, default=0)

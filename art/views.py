@@ -5,23 +5,22 @@ from .models import Post
 from django.views.generic import TemplateView
 from .forms import CommentForm
 
+
 class HomePage(TemplateView):
     template_name = 'index.html'
 
-class PaintingPage(generic.ListView):
-    model = Post
-    queryset = Post.objects.filter(status=1).order_by('-completed_on')
-    template_name = 'paintings.html'
 
-class InkPage(generic.ListView):
-    model = Post
-    queryset = Post.objects.filter(status=1).order_by('-completed_on')
-    template_name = 'ink.html'
+def art_views(request):
+    category = request.GET['category']
+    all_art = Post.objects.filter(type=category)
+    template = 'art.html'
+    context = {
+        'all_art': all_art,
+        'category': category,
+    }
 
-class PencilPage(generic.ListView):
-    model = Post
-    queryset = Post.objects.filter(status=1).order_by('-completed_on')
-    template_name = 'pencil.html'
+    return render(request, template, context)
+
 
 class ArtDetails(View):
 

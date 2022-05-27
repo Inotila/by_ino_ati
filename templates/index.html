@@ -22,9 +22,9 @@
             <!-- home page buttons that link to other pages -->
             <div class="row d-flex justify-content-center text-center home-btn-container">
                 <div class="col">
-                    <a href="{% url 'painting' %}" class="btn btn-dark homepage-btn">paintings</a>
-                    <a href="{% url 'ink' %}" class="btn btn-dark homepage-btn">ink</a>
-                    <a href="{% url 'pencil' %}" class="btn btn-dark homepage-btn">pencil</a>
+                    <a href="{% url 'art_views' %}?category=painting" class="btn btn-dark homepage-btn">paintings</a>
+                    <a href="{% url 'art_views' %}?category=ink" class="btn btn-dark homepage-btn">ink</a>
+                    <a href="{% url 'art_views' %}?category=pencil" class="btn btn-dark homepage-btn">pencil</a>
                 </div>
             </div>
         </div>
