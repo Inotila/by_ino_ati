@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404,reverse
+from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
@@ -25,7 +25,6 @@ def art_views(request):
 class ArtDetails(View):
 
     def get(self, request, slug, *args, **kwargs):
-        
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.order_by('created_on')
@@ -34,7 +33,7 @@ class ArtDetails(View):
             liked = True
 
         return render(
-            request, 
+            request,
             'details.html',
             {
                 "post": post,
@@ -52,8 +51,8 @@ class ArtDetails(View):
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
-        
-        user_comments = CommentForm(data=request.POST)   
+
+        user_comments = CommentForm(data=request.POST)
 
         if user_comments.is_valid():
             user_comments.instance.email = request.user.email
@@ -66,7 +65,7 @@ class ArtDetails(View):
             user_comments = CommentForm()
 
         return render(
-            request, 
+            request,
             'details.html',
             {
                 "post": post,
@@ -76,8 +75,9 @@ class ArtDetails(View):
             },
         )
 
+
 class ArtLike(View):
-    
+
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
 
