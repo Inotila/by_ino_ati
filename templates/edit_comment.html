@@ -53,9 +53,21 @@
                             <span class=" text-muted">
                                 {{ comment.created_on }}
                             </span>
-                            <button type="submit"><i class="fas fa-check"></i></button>
+                            <a href="/edit/{{ comment.id }}"><i class="fas fa-edit"></i></a>
+                            <a href=""><i class="fas fa-trash-alt"></i></a>
                     </div>
                     {% endfor %}
+                    <p>
+                        {% if user.is_authenticated %}
+                        <form class="comment-form" method="post">
+                            <h4 class="text-center" style="text-align: center;">Edit comment:</h4>
+                            <p>{{ user.username }} says:</p>
+                            {{ user_comments| crispy }}
+                            {% csrf_token %}
+                            <button type="submit"><i class="fas fa-check"></i></button>
+                        </form>
+                        {% endif %}
+                    </p>
                 </div>
             </div>
         </div>
