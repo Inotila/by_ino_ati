@@ -79,6 +79,11 @@ body {
     background: transparent  !important;
 }
 
+.edit_delete_button{
+    border: none  !important;
+    background: transparent  !important;
+}
+
 .comment-form{
     position:absolute;
     bottom: 0;
