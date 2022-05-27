@@ -76,6 +76,10 @@ class ArtDetails(View):
         )
 
 
+def edit_comment(request, item_id):
+    return render(request, 'templates/edit_comment.html')
+
+
 class ArtLike(View):
 
     def post(self, request, slug):
