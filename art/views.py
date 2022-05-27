@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.views.generic import TemplateView
-from .models import Post
+from .models import Post, Comment
 from .forms import CommentForm
 
 
@@ -76,8 +76,11 @@ class ArtDetails(View):
         )
 
 
-def edit_comment(request, item_id):
-    return render(request, 'templates/edit_comment.html')
+def edit_comment(request, comment_id):
+    comment = get_object_or_404(Comment, id=comment_id)
+    post = comment.post
+
+    return render(request, 'edit_comment.html', {'post': post, 'comment': comment})
 
 
 class ArtLike(View):

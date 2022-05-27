@@ -8,5 +8,5 @@ urlpatterns = [
     path('art/', views.art_views, name='art_views'),
     path('<slug:slug>/', views.ArtDetails.as_view(), name='art_details'),
     path('like/<slug:slug>', views.ArtLike.as_view(), name='art_like'),
-    path('edit/<item_id>', edit_comment, name='edit'),
+    path('edit/<comment_id>', views.edit_comment, name='edit'),
     ]
