@@ -79,8 +79,12 @@ class ArtDetails(View):
 def edit_comment(request, comment_id):
     comment = get_object_or_404(Comment, id=comment_id)
     post = comment.post
+    user_comments = CommentForm(instance=comment)
+    context = {
+        "user_comments": user_comments
+    }
 
-    return render(request, 'edit_comment.html', {'post': post, 'comment': comment})
+    return render(request, 'edit_comment.html', {'post': post, 'comment': comment}, context)
 
 
 class ArtLike(View):
