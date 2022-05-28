@@ -15,7 +15,8 @@
             <div class="row text-center">
                 <p>this is the offical art page of Inotila Opoeli Nghaamwa. Inotila is a Namibian artist currently
                     residing in Sweden. <br> you will find his paintings, ink and pencil drawings. Be sure to sign to
-                    receive the latest updates on his work and,to be able to like and comment on his work.<br>All the art
+                    receive the latest updates on his work and,to be able to like and comment on his work.<br>All the
+                    art
                     works found here were created by
                     him and their intellectual property belongs to him</p>
             </div>
@@ -26,6 +27,19 @@
                     <a href="{% url 'art_views' %}?category=ink" class="btn btn-dark homepage-btn">ink</a>
                     <a href="{% url 'art_views' %}?category=pencil" class="btn btn-dark homepage-btn">pencil</a>
                 </div>
+            </div>
+            <div class="row text-center my-3">
+                {% if user.is_authenticated %}
+                <form class="mail-list" method="post">
+                    <h4 class="text-center" style="text-align: center;">Get essential updates:</h4>
+                    <p>{{ user.username }} would you like to join get email notifications on new art works, new art
+                        works
+                        available for sale, and much more?</p>
+                   <button id="yes-button" type="submit">yes</button>
+                   <button id="no-button" type="submit">no</button>
+                    {% csrf_token %}
+                </form>
+                {% endif %}
             </div>
         </div>
     </div>
