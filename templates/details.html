@@ -54,7 +54,7 @@
                                 {{ comment.created_on }}
                             </span>
                             <a href="{% url 'edit' comment.id %}"><i class="fas fa-edit"></i></a>
-                            <a href=""><i class="fas fa-trash-alt"></i></a>
+                            <a href="{% url 'delete' comment.id %}"><i class="fas fa-trash-alt"></i></a>
                     </div>
                     {% endfor %}
                     <p>

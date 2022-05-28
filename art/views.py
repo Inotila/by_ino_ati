@@ -93,6 +93,11 @@ def edit_comment(request, comment_id,):
 
     return render(request, 'edit_comment.html', context)
 
+def delete_comment(request, comment_id,):
+    comment = get_object_or_404(Comment, id=comment_id) 
+    comment.delete()
+    return redirect('home')
+
 
 class ArtLike(View):
 
