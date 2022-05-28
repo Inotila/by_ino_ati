@@ -37,3 +37,15 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment: {self.body} by {self.name}"
+
+
+class MailingList(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    joined_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering =['joined_on']
+
+    def __str__(self):
+        return self.name
