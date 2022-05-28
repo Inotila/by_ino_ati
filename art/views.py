@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse,redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.views.generic import TemplateView
@@ -76,15 +76,22 @@ class ArtDetails(View):
         )
 
 
-def edit_comment(request, comment_id):
+def edit_comment(request, comment_id,):
     comment = get_object_or_404(Comment, id=comment_id)
+    if request.method == 'POST':
+        user_comments = CommentForm(request.POST, instance=comment)
+        if user_comments.is_valid():
+            user_comments.save()
+            return redirect('home')
     post = comment.post
     user_comments = CommentForm(instance=comment)
     context = {
-        "user_comments": user_comments
+        "user_comments": user_comments,
+        'post': post,
+        'comment': comment
     }
 
-    return render(request, 'edit_comment.html', {'post': post, 'comment': comment}, context)
+    return render(request, 'edit_comment.html', context)
 
 
 class ArtLike(View):
