@@ -1,4 +1,5 @@
-from django.shortcuts import render, get_object_or_404, reverse,redirect
+"""imports"""
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.views.generic import TemplateView
@@ -7,10 +8,12 @@ from .forms import CommentForm
 
 
 class HomePage(TemplateView):
+    """class based view that displays the home page"""
     template_name = 'index.html'
 
 
 def art_views(request):
+    """ function that displays post on art.html depending on what category they are listed as"""
     category = request.GET['category']
     all_art = Post.objects.filter(type=category)
     template = 'art.html'
@@ -23,8 +26,9 @@ def art_views(request):
 
 
 class ArtDetails(View):
-
+    """ shows the post that has been clicked on"""
     def get(self, request, slug, *args, **kwargs):
+        """this handles the like button when it has be clicked"""
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.order_by('created_on')
@@ -44,7 +48,7 @@ class ArtDetails(View):
         )
 
     def post(self, request, slug, *args, **kwargs):
-
+        """ handles the comment form """
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.order_by('created_on')
@@ -77,6 +81,9 @@ class ArtDetails(View):
 
 
 def edit_comment(request, comment_id,):
+    """ this is handles the edit button. it gets the comment id from django. the
+     redirect path need to be fixed to redirect back to the art details
+    """
     comment = get_object_or_404(Comment, id=comment_id)
     if request.method == 'POST':
         user_comments = CommentForm(request.POST, instance=comment)
@@ -93,15 +100,19 @@ def edit_comment(request, comment_id,):
 
     return render(request, 'edit_comment.html', context)
 
+
 def delete_comment(request, comment_id,):
-    comment = get_object_or_404(Comment, id=comment_id) 
+    """ this deletes comments and redirects the the redirect need to be fixed"""
+    comment = get_object_or_404(Comment, id=comment_id)
     comment.delete()
     return redirect('home')
 
 
 class ArtLike(View):
+    """ class bassed view that displays the likes """
 
     def post(self, request, slug):
+        """handles post likes"""
         post = get_object_or_404(Post, slug=slug)
 
         if post.likes.filter(id=request.user.id).exists():
