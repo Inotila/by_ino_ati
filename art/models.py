@@ -1,3 +1,4 @@
+"""models imports"""
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
@@ -6,7 +7,9 @@ from cloudinary.models import CloudinaryField
 STATUS = ((0, "Draft"), (1, "Published"))
 TYPE_OF_ART = (("painting", "Painting"), ("ink", "Ink"), ("pencil", "Pencil"))
 
+
 class Post(models.Model):
+    """this handles the data for the posts that the admin makes"""
     title = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100,  unique=True)
     type = models.CharField(max_length=20, choices=TYPE_OF_ART)
@@ -17,15 +20,19 @@ class Post(models.Model):
     size = models.CharField(max_length=100, unique=False, default='cm')
 
     class Meta:
+        """ this oders the post from oldest to news comments"""
         ordering: ['-completed_on']
 
     def __str__(self):
         return self.title
 
     def total_number_of_likes(self):
+        """this counts the total number of likes"""
         return self.likes.count()
 
+
 class Comment(models.Model):
+    """handles the data for the comments users make"""
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")
     name = models.CharField(max_length=100)
     email = models.EmailField()
@@ -33,6 +40,7 @@ class Comment(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
+        """oders the comments from newsest to oldest"""
         ordering = ['created_on']
 
     def __str__(self):
@@ -40,12 +48,14 @@ class Comment(models.Model):
 
 
 class MailingList(models.Model):
+    """collects data for users who joined the mail list"""
     name = models.CharField(max_length=100)
     email = models.EmailField()
     joined_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering =['joined_on']
+        """oders the users on the date they joined"""
+        ordering = ['joined_on']
 
     def __str__(self):
         return self.name
