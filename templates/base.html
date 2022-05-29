@@ -45,6 +45,7 @@
                     <li>
                         <a class="nav-link active" aria-current="page" href="{% url 'art_views' %}?category=pencil">Pencil</a>
                     </li class="nav-item">
+                    <!-- if user has logged in only the logout buttons will be displayed,ele only the signup and login will display -->
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
@@ -62,7 +63,7 @@
         </div>
     </nav>
 
-    <!-- message alerts -->
+    <!-- message alerts to that let user know whether they have been successful or not -->
     <div class="container">
         <div class="row">
             <div class="col">

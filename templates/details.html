@@ -7,11 +7,13 @@
     <div class="row">
         <div class="col-12 col-md-6 col-lg-8">
             <div class="card mt-3 post-card-detail">
+                <!-- card image if no image is assigned to the post a default image from static file will display -->
                 {% if "placeholder" in post.featured_image.url %}
                 <img class="card-img" src="{% static 'images/logoblack.png' %}">
                 {% else %}
                 <img class="card-img" src="{{ post.featured_image.url }}">
                 {% endif %}
+                <!-- card body containing the title and the number of likes a post has -->
                 <div class="card-body d-flex justify-content-between body-container-detail">
                     {% if user.is_authenticated %}
                     <form action="{% url 'art_like' post.slug %}" method="post">
@@ -27,7 +29,6 @@
                         {% endif %}
                     </form>
                     {% else %}
-
                     <span>
                         <p><i class="far fa-heart"></i><span
                                 class="number-of-likes">{{ post.total_number_of_likes }}</span></p>
@@ -39,6 +40,7 @@
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 my-3">
+            <!-- card for comment section and comment form -->
             <div class="card post-card-detail">
                 <div class="card-body">
                     <div class="text-center">
@@ -58,6 +60,7 @@
                     </div>
                     {% endfor %}
                     <p>
+                        <!-- only users who are authenticated can comment on post -->
                         {% if user.is_authenticated %}
                         <form class="comment-form" method="post">
                             <h4 class="text-center" style="text-align: center;">Join the Conversation:</h4>
