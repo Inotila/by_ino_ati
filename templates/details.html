@@ -15,6 +15,7 @@
                 {% endif %}
                 <!-- card body containing the title and the number of likes a post has -->
                 <div class="card-body d-flex justify-content-between body-container-detail">
+                    <!-- only signed in users can like post -->
                     {% if user.is_authenticated %}
                     <form action="{% url 'art_like' post.slug %}" method="post">
                         {% csrf_token %}
@@ -39,13 +40,14 @@
                 </div>
             </div>
         </div>
+        <!-- comment section and comment form -->
         <div class="col-12 col-md-6 col-lg-4 my-3">
-            <!-- card for comment section and comment form -->
             <div class="card post-card-detail">
                 <div class="card-body">
                     <div class="text-center">
                         <h3 class="mb-3 card-title">Comments</h3>
                     </div>
+                    <!-- loops through comments and displays them in oder of date posted -->
                     {% for comment in comments %}
                     <div class="comments" style="padding: 10px;">
                         <p>
