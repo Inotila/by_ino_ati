@@ -1,3 +1,4 @@
+"""admin imports"""
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
 from .models import Post, Comment, MailingList
@@ -5,7 +6,7 @@ from .models import Post, Comment, MailingList
 
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
-
+    """handles the admin pannel in the backend"""
     prepopulated_fields = {'slug': ('title',)}
     list_filter = ('status',)
     search_fields = ['title', 'completed_on']
@@ -15,6 +16,7 @@ class PostAdmin(SummernoteModelAdmin):
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
+    """handles the admin pannel in the backend"""
     list_display = ('name', 'email', 'created_on')
     search_fields = ['name', 'email', 'created_on']
     list_filter = ('created_on',)
@@ -22,6 +24,7 @@ class CommentAdmin(admin.ModelAdmin):
 
 @admin.register(MailingList)
 class MailingListAdmin(admin.ModelAdmin):
+    """handles the admin pannel in the backend"""
     list_display = ('name', 'email', 'joined_on')
     search_fields = ['name', 'email', 'joined_on']
     list_filter = ('joined_on',)
