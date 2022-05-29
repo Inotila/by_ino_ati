@@ -30,6 +30,7 @@
             </div>
             <div class="row text-center my-3">
                 {% if user.is_authenticated %}
+                <!-- form for authenticated users to sign up join mailing list -->
                 <form class="mail-list" method="post">
                     <h4 class="text-center" style="text-align: center;">Get essential updates:</h4>
                     <p><strong>{{ user.username }}</strong> would you like to join get email notifications on new art works, new art
