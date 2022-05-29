@@ -1,6 +1,7 @@
+"""url imports"""
 from django.urls import path
-from . import views
 from art.views import edit_comment, delete_comment
+from . import views
 
 
 urlpatterns = [
