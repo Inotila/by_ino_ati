@@ -57,12 +57,15 @@
                             <span class=" text-muted">
                                 {{ comment.created_on }}
                             </span>
+                            <!-- edit and delete buttons -->
+                            {% if user.is_authenticated %}
                             <a href="{% url 'edit' comment.id %}"><i class="fas fa-edit"></i></a>
                             <a href="{% url 'delete' comment.id %}"><i class="fas fa-trash-alt"></i></a>
+                            {% endif %}
                     </div>
                     {% endfor %}
                     <p>
-                        <!-- only users who are authenticated can comment on post -->
+                        <!-- comment form, only users who are authenticated can comment on post -->
                         {% if user.is_authenticated %}
                         <form class="comment-form" method="post">
                             <h4 class="text-center" style="text-align: center;">Join the Conversation:</h4>
