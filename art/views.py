@@ -15,6 +15,15 @@ class HomePage(TemplateView):
         mail_form = MailForm()
         return render(request, 'index.html', {'mail_form': mail_form})
 
+    def post(self, request):
+        form = MailForm(request.POST)
+        join = False
+        if form.is_valid(yes_join=True):
+            join=True
+        else:
+            join=False
+        return redirect( 'index.html')
+
 
 
 def art_views(request):
