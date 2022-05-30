@@ -3,13 +3,18 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.views.generic import TemplateView
-from .models import Post, Comment
-from .forms import CommentForm
+from .models import Post, Comment, MailingList
+from .forms import CommentForm, MailForm
 
 
 class HomePage(TemplateView):
     """class based view that displays the home page"""
     template_name = 'index.html'
+
+    def get(self, request):
+        mail_form = MailForm()
+        return render(request, 'index.html', {'mail_form': mail_form})
+
 
 
 def art_views(request):

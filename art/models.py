@@ -52,6 +52,8 @@ class MailingList(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
     joined_on = models.DateTimeField(auto_now_add=True)
+    yes_join = models.BooleanField(default=True)
+    no_dont_join = models.BooleanField(default=False)
 
     class Meta:
         """oders the users on the date they joined"""

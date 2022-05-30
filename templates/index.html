@@ -36,9 +36,8 @@
                     <p><strong>{{ user.username }}</strong> would you like to join get email notifications on new art works, new art
                         works
                         available for sale, and much more?</p>
-                   <button id="yes-button" type="submit">yes</button>
-                   <button id="no-button" type="submit">no</button>
                     {% csrf_token %}
+                    {{ mail_form }}
                 </form>
                 {% endif %}
             </div>
