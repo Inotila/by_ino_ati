@@ -49,15 +49,14 @@ class Comment(models.Model):
 
 class MailingList(models.Model):
     """collects data for users who joined the mail list"""
-    name = models.CharField(max_length=100)
-    email = models.EmailField()
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, null=True, blank=False)
+    join = models.BooleanField(default=False, null=False)
     joined_on = models.DateTimeField(auto_now_add=True)
-    yes_join = models.BooleanField(default=True)
-    no_dont_join = models.BooleanField(default=False)
 
     class Meta:
         """oders the users on the date they joined"""
         ordering = ['joined_on']
 
     def __str__(self):
-        return self.name
+        return f"{self.user.username}"

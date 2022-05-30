@@ -25,6 +25,10 @@ class CommentAdmin(admin.ModelAdmin):
 @admin.register(MailingList)
 class MailingListAdmin(admin.ModelAdmin):
     """handles the admin pannel in the backend"""
-    list_display = ('name', 'email', 'joined_on')
-    search_fields = ['name', 'email', 'joined_on']
+    list_display = ('user', 'email', 'join', 'joined_on')
+    search_fields = ['user', 'join', 'joined_on']
     list_filter = ('joined_on',)
+
+    @admin.display()
+    def email(self, response):
+        return response.user.email

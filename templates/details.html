@@ -58,7 +58,7 @@
                                 {{ comment.created_on }}
                             </span>
                             <!-- edit and delete buttons -->
-                            {% if user.is_authenticated %}
+                            {% if request.user.email == comment.email %}
                             <a href="{% url 'edit' comment.id %}"><i class="fas fa-edit"></i></a>
                             <a href="{% url 'delete' comment.id %}"><i class="fas fa-trash-alt"></i></a>
                             {% endif %}

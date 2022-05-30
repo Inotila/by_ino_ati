@@ -1,27 +1,40 @@
 """imports"""
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
+from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 from django.views.generic import TemplateView
 from .models import Post, Comment, MailingList
 from .forms import CommentForm, MailForm
 
 
-class HomePage(TemplateView):
+def home(request):
     """class based view that displays the home page"""
-    template_name = 'index.html'
+    if request.user.is_authenticated:
+        user = get_object_or_404(User, username=request.user)
+        submitted_form = MailingList.objects.filter(user=user).count()
+        mail_form = MailForm(request.POST, initial={'user': request.user})
 
-    def get(self, request):
+        if request.method == "POST":
+            if mail_form.is_valid():
+                mail_form.instance.user = user
+                mail_form.save()
+                if request.POST.get("join"):
+                    messages.success(request, "Thank You!")
+                else:
+                    messages.error(request, "No Problem!")
+                submitted_form = 1
+    else:
+        submitted_form = 0
         mail_form = MailForm()
-        return render(request, 'index.html', {'mail_form': mail_form})
 
-    def post(self, request):
-        form = MailForm(request.POST)
-        if form.is_valid():
-            form.yes_join = True
-            form.save()
-        return redirect('home')
-
+    template = 'index.html'
+    context = {
+        "submitted_form": submitted_form,
+        "mail_form": mail_form,
+    }
+    return render(request, template, context)
 
 
 def art_views(request):

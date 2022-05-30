@@ -16,4 +16,7 @@ class MailForm(forms.ModelForm):
     # get_mail = forms.BooleanField()
     class Meta:
         model = MailingList
-        fields = ('yes_join', 'no_dont_join')
+        # widgets = {"user": forms.HiddenInput(),}
+        # fields = "__all__"
+        fields = ('join', )
+        # fields = ('yes_join', 'no_dont_join', )
