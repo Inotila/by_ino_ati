@@ -15,7 +15,7 @@
                 {% endif %}
                 <!-- card body containing the title and the number of likes a post has -->
                 <div class="card-body d-flex justify-content-between body-container-detail">
-                    <!-- only signed in users can like post -->
+                    <!-- form for only signed in users to like post -->
                     {% if user.is_authenticated %}
                     <form action="{% url 'art_like' post.slug %}" method="post">
                         {% csrf_token %}
@@ -57,7 +57,7 @@
                             <span class=" text-muted">
                                 {{ comment.created_on }}
                             </span>
-                            <!-- edit and delete buttons -->
+                            <!-- edit and delete buttons, checks the mail of the user so user can only comment or edit own post-->
                             {% if request.user.email == comment.email %}
                             <a href="{% url 'edit' comment.id %}"><i class="fas fa-edit"></i></a>
                             <a href="{% url 'delete' comment.id %}"><i class="fas fa-trash-alt"></i></a>
