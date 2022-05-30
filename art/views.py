@@ -17,12 +17,10 @@ class HomePage(TemplateView):
 
     def post(self, request):
         form = MailForm(request.POST)
-        join = False
-        if form.is_valid(yes_join=True):
-            join=True
-        else:
-            join=False
-        return redirect( 'index.html')
+        if form.is_valid():
+            form.yes_join = True
+            form.save()
+        return redirect('home')
 
 
 
