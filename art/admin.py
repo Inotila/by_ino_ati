@@ -11,7 +11,6 @@ class PostAdmin(SummernoteModelAdmin):
     list_filter = ('status',)
     search_fields = ['title', 'completed_on']
     list_display = ('title', 'status', 'completed_on')
-    # summernote_fields = ('title')
 
 
 @admin.register(Comment)

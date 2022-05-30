@@ -13,10 +13,6 @@ class CommentForm(forms.ModelForm):
 
 class MailForm(forms.ModelForm):
     """creates the form for joing the mailing list"""
-    # get_mail = forms.BooleanField()
     class Meta:
         model = MailingList
-        # widgets = {"user": forms.HiddenInput(),}
-        # fields = "__all__"
         fields = ('join', )
-        # fields = ('yes_join', 'no_dont_join', )

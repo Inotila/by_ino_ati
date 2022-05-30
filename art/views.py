@@ -21,9 +21,9 @@ def home(request):
                 mail_form.instance.user = user
                 mail_form.save()
                 if request.POST.get("join"):
-                    messages.success(request, "Thank You!")
+                    messages.success(request, "You have successfully joined the mailing list!")
                 else:
-                    messages.error(request, "No Problem!")
+                    messages.error(request, "You have select to not join the mailing list.")
                 submitted_form = 1
     else:
         submitted_form = 0
@@ -38,7 +38,8 @@ def home(request):
 
 
 def art_views(request):
-    """ function that displays post on art.html depending on what category they are listed as"""
+    """ function that displays post on art.html
+    depending on what category they are listed as"""
     category = request.GET['category']
     all_art = Post.objects.filter(type=category)
     template = 'art.html'
@@ -127,7 +128,8 @@ def edit_comment(request, comment_id,):
 
 
 def delete_comment(request, comment_id,):
-    """ this deletes comments and redirects the the redirect need to be fixed"""
+    """ this deletes comments and
+    redirects the the redirect need to be fixed"""
     comment = get_object_or_404(Comment, id=comment_id)
     comment.delete()
     return redirect('home')
