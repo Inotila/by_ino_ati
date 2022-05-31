@@ -132,7 +132,7 @@ def delete_comment(request, comment_id,):
     redirects the the redirect need to be fixed"""
     comment = get_object_or_404(Comment, id=comment_id)
     comment.delete()
-    return redirect('home')
+    return redirect(reverse('art_details', args=[comment.post.slug]))
 
 
 class ArtLike(View):
