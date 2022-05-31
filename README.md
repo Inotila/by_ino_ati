@@ -49,55 +49,48 @@ On this page the user is welcomed, and the tone/vibe of the game is set. From th
 
 In addition, the home page offers navigation buttons that are simply titled in order for them to easily understand what exactly it is that the button will do/take them to. 
 
-2. Play page - 
+2. Art view/grid pages(Painting, Ink, Pencil) - 
 
-<img src="./assets/images/gamepage.png" width="700">
+<img src="./static/images/gridview.png" width="700">
+<img src="./static/images/gridview1.png" width="700">
+<img src="./static/images/gridview2.png" width="700">
 
-This is where the game is played. The UI is simple and users should be able to clear identify the various elements of the page.
-
-The page has player and master score. These two elements are the total score keeper for the game. They update after every end of turn and re-set to zero when the game has come to an end. To show the increment of the score, it numbers font becomes bold for a few seconds when whoever’s turn it is has ended. 
-
-In addition to the player and master score, there is a current score element. This keeps the score of the roll of whoever’s turn it is and re-sets to zero when their turn has come to an end. Furthermore, the current score background also switches colors to represent bonus or a zero score. I the player rolls a 500 and above the background-color becomes white. Id the player gets a score of zero, the background-color turns red. This is to give the player positive feedback when they have a bonus score, or let them know they got a bad score/zero.
-
-The page has dice images that show exactly what the player or the CPU got on each roll. And they are displayed on a wooden background to make the user feel like they are playing on a game board.
-
-The page also has buttons for the game play. The roll dice button is where the player rolls for his/her turn. The keep dice button is how the play increments his/her total score, and the pass dice buttons starts the CPU/other players turn.
+This page is where users can view all the content on offer in their categories. On this page user can also see how many likes a specific post has. And they can click on the page title to further view a large sigular image.
 
 
-3. Rule page - 
+3. Art detail page - 
 
-<img src="./assets/images/rulepage.png" width="700">
+<img src="./static/images/comment.png" width="700">
+<img src="./static/images/like.png" width="700">
 
-A page that has information about the rule of the game and how it is played.
+This page contains a single view of the image clicked on by the user from the art view page. On this page users can get a better look at the content. 
 
-In addition, the rules page offers navigation buttons that are simply titled in order for them to easily understand what exactly it is that the button will do/take them to. 
+In addition users who are signed in can like the content and they can leave and edit comments. This a platform that art lovers can discuss what they are seeing.
 
-4. About page - 
+4. SignUp/signout  - 
 
-<img src="./assets/images/aboutpage.png" width="700">
+<img src="./static/images/signup.png" width="700">
+<img src="./static/images/signout.png" width="700">
+<img src="./static/images/alerts.png" width="700">
+<img src="./static/images/alerts1.png" width="700">
 
-A page that has information about the games developer. And clearly states that copying this game is not permitted, as it is an original game by the developer.
+On this page user can sign up to gain full access to apps functionality. It is an easy and quick process for the user. When user is logged the nav bar, in addition to a message alert , will let them know that they have logged in because the option to login will change to log out.
 
-In addition, the about page offers navigation buttons that are simply titled in order for them to easily understand what exactly it is that the button will do/take them to. 
+In addtion the app has an easy signout page.
 
+4. A functioning database in the backend-
 
+<img src="./static/images/data.png" width="700">
 
-4. Responsive feedback -
-
-<img src="./assets/images/feedback.png" width="700">
-
-All the buttons on the page have a hover feature that turns them green. However, most of the responsive features are found in the play page, some of these have already been mentioned in the above text. In addition to those that have already been mentioned, there is a pop-up to indicate who's turn it is. There is also a winner popup to show that the game has ended and announces the winner. The winner announcing popup also give the user an option to play again or return home. These features make the user feel less isolated.
-
+This application that has a easy to navigate admin pannel where the owner can view data and make post to the mainpage. In addition the owner can also create drafts post that he can complelet at a later stage.
 
 5. Logo - 
 
-<img src="./assets/images/game-logo.png"  width="200">
+<img src="./static/images/logoblack.png" width="700">
 
 A nice logo that also serves as a home button.
 
 6. Footer and social media links-
-
-<img src="./assets/images/footer.png" width="700">
 
 A footer to keep social media links. These links are links that open in new tabs so as to not take the user away from the website.
 
@@ -105,7 +98,11 @@ The social media links are useful for the users because they encourage the user 
 
 
 ## Future Features
-1. 
+1. An Status to bar that will show the availabilty of the arts pieces and their prices
+2. Users will be able to share post to other apps
+3. Users will be able to make bids on art pieces
+4. User will be able to like content from the grid view page to
+5. The number of comments a post gets will also be displayed
 
 ## Testing
 
