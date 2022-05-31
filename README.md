@@ -185,6 +185,16 @@ For the mailing list I created a fake user name Max as you will see in the image
 
 <img src="./static/images/maillist.png" width="700">
 
+## wireframes and mockups
+
+<img src="./static/imagesmockups.jpeg" width="700">
+
+<img src="./static/imagesmockups1.jpeg" width="700">
+
+<img src="./static/imagesmockups2.jpeg" width="700">
+
+<img src="./static/imagesmockups3.jpeg" width="700">
+
 
 ## Bugs and fixes
 
@@ -237,12 +247,6 @@ Python - The only errors i have are for the line being too long, i opted not to 
 
 <img src="./static/images/validator_python6.png" width="700">
 
-Accessibility - Confirmation that the colors content is easy to read and the sight is accessible  by running it through lighthouse in DevTools.
-
-<img src="./assets/images/lighthouse.png" width="700">
-
-Furthermore, I have ran my JavaScript file through jshint and have no major issues apart from ES6 warnings. No errors are reported in the DevTools either.
-
 ## Deployment
 This project has been deployed on heroku. The live link to project is: <a href="https://by-ino-ati.herokuapp.com/" target="_blank">by_ino_ati</a>
 The steps to deploy this project are:
@@ -253,7 +257,7 @@ From the GitHub I logged into heroku
 
 I then signed into the app that I wanted to deploy
 
-i changed my debug to False and removed my disablestaic configvar
+i changed my debug to False and removed my DISABLE_COLLECTSTATIC configvar
 
 I added, commited and pushed. And then i pushed to heroku main.
 
