@@ -115,7 +115,7 @@ def edit_comment(request, comment_id,):
         user_comments = CommentForm(request.POST, instance=comment)
         if user_comments.is_valid():
             user_comments.save()
-            return redirect('home')
+            return redirect(reverse('art_details', args=[comment.post.slug]))
     post = comment.post
     user_comments = CommentForm(instance=comment)
     context = {
@@ -124,7 +124,7 @@ def edit_comment(request, comment_id,):
         'comment': comment
     }
 
-    return render(request, 'edit_comment.html', context)
+    return render(request, 'edit_comment.html', context) 
 
 
 def delete_comment(request, comment_id,):
