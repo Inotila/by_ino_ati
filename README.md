@@ -42,57 +42,57 @@ In addition, the UI is easy to understand and navigate. Furthermore, the site of
 
 ## Actual Features (end product)
 1. Welcome/home page -
-
+<br>
 <img src="./static/images/homepage.png" width="700">
-
+<br>
 On this page the user is welcomed, and the tone/vibe of the game is set. From this page first-time users will be able to know that this is an art application.
 
 In addition, the home page offers navigation buttons that are simply titled in order for them to easily understand what exactly it is that the button will do/take them to. 
 
 2. Art view/grid pages(Painting, Ink, Pencil) - 
-
+<br>
 <img src="./static/images/gridview.png" width="700">
-
+<br>
 <img src="./static/images/gridview1.png" width="700">
-
+<br>
 <img src="./static/images/gridview2.png" width="700">
-
+<br>
 This page is where users can view all the content on offer in their categories. On this page user can also see how many likes a specific post has. And they can click on the page title to further view a large sigular image.
 
 
 3. Art detail page - 
-
+<br>
 <img src="./static/images/comment.png" width="700">
 <img src="./static/images/like.png" width="700">
-
+<br>
 This page contains a single view of the image clicked on by the user from the art view page. On this page users can get a better look at the content. 
 
 In addition users who are signed in can like the content and they can leave and edit comments. This a platform that art lovers can discuss what they are seeing.
 
 4. SignUp/signout  - 
-
+<br>
 <img src="./static/images/signup.png" width="700">
-
+<br>
 <img src="./static/images/signout.png" width="700">
-
+<br>
 <img src="./static/images/alerts.png" width="700">
-
+<br>
 <img src="./static/images/alerts1.png" width="700">
-
+<br>
 On this page user can sign up to gain full access to apps functionality. It is an easy and quick process for the user. When user is logged the nav bar, in addition to a message alert , will let them know that they have logged in because the option to login will change to log out.
 
 In addtion the app has an easy signout page.
 
 4. A functioning database in the backend-
-
+<br>
 <img src="./static/images/data.png" width="700">
-
+<br>
 This application that has a easy to navigate admin pannel where the owner can view data and make post to the mainpage. In addition the owner can also create drafts post that he can complelet at a later stage.
 
 5. Logo - 
-
+<br>
 <img src="./static/images/logoblack.png" width="700">
-
+<br>
 A nice logo that also serves as a home button.
 
 6. Footer and social media links-
@@ -102,11 +102,11 @@ A footer to keep social media links. These links are links that open in new tabs
 The social media links are useful for the users because they encourage the user to get in contact with the developer on other platforms (Facebook, Instagram and YouTube).
 
 7. Join Mail list
-
+<br>
 <img src="./static/images/maillist2.png" width="700">
-
+<br>
 <img src="./static/images/maillist.png" width="700">
-
+<br>
 Users can join a mailing list or opt out of it. This mailing list gives user the option of getting timely updates about new art pieces and sales that are live on the app.
 
 The owner can user this to get data to communicate directly with site users.
@@ -123,32 +123,39 @@ The owner can user this to get data to communicate directly with site users.
 I did manual test to ensure that the apps features works as expected.
 
 i created a super user to make post to app and view the data from the back end. And this all worked. All post on the app where upload via the admin panel.
-
+<br>
 <img src="./static/images/data.png" width="700">
-
+<br>
 I created also logged in as a user in the front end to ensure that the post are rendering as expected and they did. The signup function works, and i signed out and back in again just to ensure that both the signout and signin works
-
+<br>
 <img src="./static/images/signup.png" width="700">
-
+<br>
 Signed up with a fake user 
-
+<br>
 <img src="./static/images/signout.png" width="700">
-
+<br>
 Signed out out fake
 
 
 I started by testing that all the links in the navbar and the home page buttons work and lead to where they are intended and they did. The logo will send you home, as will the home link in navbar. 
-
+<br>
 <img src="./static/images/homepage.png" width="700">
+<br>
 
 The ink,painting, and pencil links in the navbar and the homepage buttons  all lead to their respective pages
-
+<br>
 <img src="./static/images/gridview.png" width="700">
 
+a view of the page that painting button leads to
+<br>
 <img src="./static/images/gridview1.png" width="700">
 
+a view of the page that ink button leads to
+<br>
 <img src="./static/images/gridview2.png" width="700">
 
+a view of the page that pencil button leads to
+<br>
 I tested that like, comment, edit and delete buttons all work by going to the page of a single post and liked the post, created a comment, edited it and then deleted it.
 
 <img src="./static/images/comment.png" width="700">
