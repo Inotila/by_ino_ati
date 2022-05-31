@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html class="h-100">
+<html lang="en" class="h-100">
 
 <head>
     <title>by_ino_ati</title>
@@ -41,14 +41,14 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page"
                             href="{% url 'art_views' %}?category=painting">Paintings</a>
-                    </li class="nav-item">
-                    <li>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'art_views' %}?category=ink">Ink</a>
-                    </li class="nav-item">
-                    <li>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page"
                             href="{% url 'art_views' %}?category=pencil">Pencil</a>
-                    </li class="nav-item">
+                    </li>
                     <!-- if user has logged in only the logout buttons will be displayed,ele only the signup and login will display -->
                     {% if user.is_authenticated %}
                     <li class="nav-item">
