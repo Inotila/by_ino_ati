@@ -1,44 +1,12 @@
- The last update to this file was: **September 1, 2021**
+<img src="./static/images/logoblack.png" width="320px">
 
-## Gitpod Reminders
+To the live page from the terminal type:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-<img src="./assets/images/logo-yellow.jpg" width="320px">
-
-To run a frontend (HTML, CSS, JavaScript only) application in Gitpod, in the terminal, type:
-
-python3 -m http.server
+`python3 manage.py runserver`
 
 To run the webpage click on this link: <a href="https://by-ino-ati.herokuapp.com/" target="_blank">by_ino_ati</a>
 
-<img src="./assets/images/reponsive.png" width="700">
+<img src="./static/images/responsive.png" width="700">
 
 # by_ino_ati(Portfolio 4)
 
@@ -48,15 +16,15 @@ This project is for my final submission for my forth milestone. The aim of the p
 
 Is a web application where users can view and interact with art by artist Inotila Nghaamwa(the owner of the page). 
 
-The site owner is an artist, and would like to offer users a platform where they can view and interact with his art work. The owner would like to keep adding features to the site and updating to increase the way in which site users can engage with the content.
+The site owner is an artist, and would like to offer users a platform where they can view and interact with his art work by being able to like and comment on individial picuters. In addition the owner would like to be able to handle data at the back end and make post on to the page using the backend. Furthermore, the owner would like to also be able to commnicate the latest delopments to his users via email, so he want to give user the opportuinty to signup for a mailing list. The owner would like to keep adding features to the site and updating it to increase the way in which site users can engage with the content,the owner and each other.
 
-The users are primarily art enthusists, art collectors, and other peopler in the artist commuinity.
+The users are primarily art enthusists, art collectors, and other peopler in the artist commuinity. These user would like to easily navigate the application and be able to interact with the content and get feedback from the app and other users. In addition user want to be able to clearly view the content in a familiar manner that they are use to on applications such as instagram.
 
 ## Value
 
-users can view and interact with his art work by liking and commenting on it.
+users can view the art work,in well categorized pages and also in full single view. In addition, users can interact with the conten by liking and commenting on it. Users also have the ability to delete and update their comments, the app has a full CRUD fuctionality.
 
-In addition, the UI is easy to understand and navigate. Furthermore, the site offers the user interaction, alerting the users on wconsequence of their actions are.
+In addition, the UI is easy to understand and navigate. Furthermore, the site offers the user feedback alerting the users on consequence of their actions are. The app has an easy sign up, login and logout pages. Only users who are signed up can comment or like the content. This gives the owner the ability to get valuable data from the users to interact with them, and users get the ability to change and add data as they please.
 
 ## Potential features (before starting)
 
@@ -75,9 +43,9 @@ In addition, the UI is easy to understand and navigate. Furthermore, the site of
 ## Actual Features (end product)
 1. Welcome/home page -
 
-<img src="./assets/images/homepage.png" width="700">
+<img src="./static/images/homepage.png" width="700">
 
-On this page the user is welcomed, and the tone/vibe of the game is set. From this page first-time users will be able to know that this is a game. 
+On this page the user is welcomed, and the tone/vibe of the game is set. From this page first-time users will be able to know that this is an art application.
 
 In addition, the home page offers navigation buttons that are simply titled in order for them to easily understand what exactly it is that the button will do/take them to. 
 
