@@ -4,10 +4,20 @@ body {
     position: relative;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* header */
 
 /* footer */
+footer{
+    font-size:large
+}
 
+.footer-text{
+    color: #fff !important;
+}
 /* base template */
 
 /* home page  */
