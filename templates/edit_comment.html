@@ -69,7 +69,7 @@
                             <p>{{ user.username }} says:</p>
                             {{ user_comments| crispy }}
                             {% csrf_token %}
-                            <button type="submit"><i class="fas fa-check"></i></button>
+                            <button class="btn btn-dark" type="submit">submit</i></button>
                         </form>
                         {% endif %}
                     </p>
