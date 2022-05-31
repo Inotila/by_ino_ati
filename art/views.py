@@ -124,7 +124,7 @@ def edit_comment(request, comment_id,):
         'comment': comment
     }
 
-    return render(request, 'edit_comment.html', context) 
+    return render(request, 'edit_comment.html', context)
 
 
 def delete_comment(request, comment_id,):

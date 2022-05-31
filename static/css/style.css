@@ -6,139 +6,19 @@ body {
 
 a {
     text-decoration: none;
-    color:#000;
+    color: #000;
 }
 
-/* header */
-
-/* footer */
-footer{
-    font-size:large
-}
-
-.footer-text{
-    color: #fff !important;
-}
 /* base template */
 
-/* home page  */
-#hero-image {
-    max-width: 100%;
-    height: auto;
-}
-
-/* post page  */
-
-.post-card {
-    position: relative;
-    height: 100%;
-    width: 100% !important;
-}
-
-.post-image-container {
-    position: absolute;
-}
-
-.body-container {
-    background-color: #e2e6ed;
-    max-height: 3rem !important;
-    width: 100%;
-    bottom: 0;
-}
-
-.title_anchor{
-     text-decoration:none;
-    color:#000;
-}
-
-.number-of-likes{
-    color:#4a4949;
-}
-
-.post-title {
-    font-weight:500;
-}
-
-.fa-comment-dots, .fa-heart{
-     color: #000;
-    font-size:1.05rem;
-}
-
-/* details template */
-
-.post-card-detail{
-    width: 100% !important;
-}
-
-.body-container-detail{
-    position:absolute;
-     background-color: #e2e6ed;
-    max-height: 3rem !important;
-    width: 100%;
-    bottom: 0;
-}
-
-#like-button{
-    border: none  !important;
-    background: transparent  !important;
-}
-
-#unlike-button{
-    border: none  !important;
-    background: transparent  !important;
-}
-
-.edit_delete_button{
-    border: none  !important;
-    background: transparent  !important;
-}
-
-.comment-form > div > label {
-    display:none !important;
-}
-
-.card-img, .card-img-bottom, .card-img-top {
-    width: unset;
-}
-
-/* media queries */
-
-@media (max-width: 397px) {
-    .homepage-btn {
-        width: 30% !important;
-        font-size: auto !important;
-        padding: 0px !important;
-    }
-}
-
-@media (min-width: 398px) {
-    .homepage-btn {
-        width: 30% !important;
-        font-size: auto !important;
-        padding: 0px !important;
-    }
-}body {
-    background-color: #f4f4f4;
-    min-height: 100vh;
-    position: relative;
-}
-
-a {
-    text-decoration: none;
-    color:#000;
-}
-
-/* header */
-
 /* footer */
-footer{
-    font-size:large
+footer {
+    font-size: large
 }
 
-.footer-text{
+.footer-text {
     color: #fff !important;
 }
-/* base template */
 
 /* home page  */
 #hero-image {
@@ -167,65 +47,67 @@ footer{
     bottom: 0;
 }
 
-.title_anchor{
-     text-decoration:none;
-    color:#000;
+.title_anchor {
+    text-decoration: none;
+    color: #000;
 }
 
-.number-of-likes{
-    color:#4a4949;
+.number-of-likes {
+    color: #4a4949;
 }
 
 .post-title {
-    font-weight:600;
+    font-weight: 600;
 }
 
-.fa-comment-dots, .fa-heart{
-     color: #000;
-    font-size:1.05rem;
+.fa-comment-dots,
+.fa-heart {
+    color: #000;
+    font-size: 1.05rem;
 }
 
 /* details template */
 
-.post-card-detail{
+.post-card-detail {
     width: 100% !important;
 }
 
-.card-body{
-	background-color:#e2e6ed;
-	border: 1px solid #babbbb;
+.card-body {
+    background-color: #e2e6ed;
+    border: 1px solid #babbbb;
 }
 
-.body-container-detail{
-    position:absolute;
-     background-color: #e2e6ed;
+.body-container-detail {
+    position: absolute;
+    background-color: #e2e6ed;
     max-height: 3rem !important;
     width: 100%;
     bottom: 0;
 }
 
-#like-button{
-    border: none  !important;
-    background: transparent  !important;
+#like-button {
+    border: none !important;
+    background: transparent !important;
 }
 
-#unlike-button{
-    border: none  !important;
-    background: transparent  !important;
+#unlike-button {
+    border: none !important;
+    background: transparent !important;
 }
 
-.edit_delete_button{
-    border: none  !important;
-    background: transparent  !important;
+.edit_delete_button {
+    border: none !important;
+    background: transparent !important;
 }
 
-.comment-form > div > label {
-    display:none !important;
+.comment-form>div>label {
+    display: none !important;
 }
 
-.card-img, .card-img-bottom, .card-img-top {
+.card-img,
+.card-img-bottom,
+.card-img-top {
     width: unset;
-    /* height: 100%; */
 }
 
 /* media queries */
@@ -233,7 +115,6 @@ footer{
 @media (max-width: 397px) {
     .homepage-btn {
         width: 30% !important;
-        font-size: auto !important;
         padding: 0px !important;
     }
 }
@@ -241,7 +122,6 @@ footer{
 @media (min-width: 398px) {
     .homepage-btn {
         width: 30% !important;
-        font-size: auto !important;
         padding: 0px !important;
     }
 }

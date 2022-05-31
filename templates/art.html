@@ -15,9 +15,9 @@
                 <div class="card w-75 post-card">
                     <!-- card image if no image is assigned to the post a default image from static file will display -->
                     {% if "placeholder" in art.featured_image.url %}
-                        <img class="card-img post-image" src="{% static 'images/logoblack.png' %}">
+                        <img class="card-img post-image" src="{% static 'images/logoblack.png' %}" alt="a placeholder image of artist logo">
                     {% else %}
-                        <img class="card-img post-image" src="{{ art.featured_image.url }}">
+                        <img class="card-img post-image" src="{{ art.featured_image.url }}" alt="a picture of art work by artist inotila nghaamwa">
                     {% endif %}
                     <!-- card body containing the title and the number of likes a post has -->
                     <div class="card-body d-flex justify-content-between body-container">

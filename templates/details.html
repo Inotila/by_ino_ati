@@ -9,9 +9,11 @@
             <div class="card mt-3 post-card-detail">
                 <!-- card image if no image is assigned to the post a default image from static file will display -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img class="card-img" src="{% static 'images/logoblack.png' %}">
+                <img class="card-img" src="{% static 'images/logoblack.png' %}"
+                    alt="a placeholder image of artist logo">
                 {% else %}
-                <img class="card-img" src="{{ post.featured_image.url }}">
+                <img class="card-img" src="{{ post.featured_image.url }}"
+                    alt="a picture of art work by artist inotila nghaamwa">
                 {% endif %}
                 <!-- card body containing the title and the number of likes a post has -->
                 <div class="card-body d-flex justify-content-between body-container-detail">
@@ -30,10 +32,10 @@
                         {% endif %}
                     </form>
                     {% else %}
-                    <span>
-                        <p><i class="far fa-heart"></i><span
-                                class="number-of-likes">{{ post.total_number_of_likes }}</span></p>
-                    </span>
+
+                    <p><i class="far fa-heart"></i>
+                        class="number-of-likes">{{ post.total_number_of_likes }}</p>
+
                     {% endif %}
                     <h5 class="card-title text-center">{{ post.title }}</h5>
                     <p><i class="far fa-solid fa-comment-dots"></i></p>
