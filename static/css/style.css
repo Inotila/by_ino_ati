@@ -89,6 +89,10 @@ body {
     bottom: 0;
 }
 
+.comment-form > div > label {
+    display:none !important;
+}
+
 .card-img, .card-img-bottom, .card-img-top {
     width: unset;
     height: 100%;
