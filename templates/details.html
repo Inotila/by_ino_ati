@@ -5,8 +5,8 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-6 col-lg-8">
-            <div class="card mt-3 post-card-detail">
+        <div class="col-12 col-md-6 col-lg-8 my-3">
+            <div class="card post-card-detail">
                 <!-- card image if no image is assigned to the post a default image from static file will display -->
                 {% if "placeholder" in post.featured_image.url %}
                 <img class="card-img" src="{% static 'images/logoblack.png' %}"
