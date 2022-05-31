@@ -247,6 +247,10 @@ Python - The only errors i have are for the line being too long, i opted not to 
 
 <img src="./static/images/validator_python6.png" width="700">
 
+This app also  meets the accessibilty requirements of lighthouse in devtools
+
+<img src="./static/images/lighthouse.png" width="700">
+
 ## Deployment
 This project has been deployed on heroku. The live link to project is: <a href="https://by-ino-ati.herokuapp.com/" target="_blank">by_ino_ati</a>
 The steps to deploy this project are:
