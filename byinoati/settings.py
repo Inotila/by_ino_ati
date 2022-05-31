@@ -72,6 +72,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'byinoati.urls'
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 TEMPLATES = [
     {
