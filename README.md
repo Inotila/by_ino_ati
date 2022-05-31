@@ -52,7 +52,9 @@ In addition, the home page offers navigation buttons that are simply titled in o
 2. Art view/grid pages(Painting, Ink, Pencil) - 
 
 <img src="./static/images/gridview.png" width="700">
+
 <img src="./static/images/gridview1.png" width="700">
+
 <img src="./static/images/gridview2.png" width="700">
 
 This page is where users can view all the content on offer in their categories. On this page user can also see how many likes a specific post has. And they can click on the page title to further view a large sigular image.
@@ -70,8 +72,11 @@ In addition users who are signed in can like the content and they can leave and 
 4. SignUp/signout  - 
 
 <img src="./static/images/signup.png" width="700">
+
 <img src="./static/images/signout.png" width="700">
+
 <img src="./static/images/alerts.png" width="700">
+
 <img src="./static/images/alerts1.png" width="700">
 
 On this page user can sign up to gain full access to apps functionality. It is an easy and quick process for the user. When user is logged the nav bar, in addition to a message alert , will let them know that they have logged in because the option to login will change to log out.
@@ -96,6 +101,15 @@ A footer to keep social media links. These links are links that open in new tabs
 
 The social media links are useful for the users because they encourage the user to get in contact with the developer on other platforms (Facebook, Instagram and YouTube).
 
+7. Join Mail list
+
+<img src="./static/images/maillist2.png" width="700">
+
+<img src="./static/images/maillist.png" width="700">
+
+Users can join a mailing list or opt out of it. This mailing list gives user the option of getting timely updates about new art pieces and sales that are live on the app.
+
+The owner can user this to get data to communicate directly with site users.
 
 ## Future Features
 1. An Status to bar that will show the availabilty of the arts pieces and their prices
@@ -106,27 +120,115 @@ The social media links are useful for the users because they encourage the user 
 
 ## Testing
 
+I did manual test to ensure that the apps features works as expected.
+
+i created a super user to make post to app and view the data from the back end. And this all worked. All post on the app where upload via the admin panel.
+
+<img src="./static/images/data.png" width="700">
+
+I created also logged in as a user in the front end to ensure that the post are rendering as expected and they did. The signup function works, and i signed out and back in again just to ensure that both the signout and signin works
+
+<img src="./static/images/signup.png" width="700">
+
+Signed up with a fake user 
+
+<img src="./static/images/signout.png" width="700">
+
+Signed out out fake
+
+
+I started by testing that all the links in the navbar and the home page buttons work and lead to where they are intended and they did. The logo will send you home, as will the home link in navbar. 
+
+<img src="./static/images/homepage.png" width="700">
+
+The ink,painting, and pencil links in the navbar and the homepage buttons  all lead to their respective pages
+
+<img src="./static/images/gridview.png" width="700">
+
+<img src="./static/images/gridview1.png" width="700">
+
+<img src="./static/images/gridview2.png" width="700">
+
+I tested that like, comment, edit and delete buttons all work by going to the page of a single post and liked the post, created a comment, edited it and then deleted it.
+
+<img src="./static/images/comment.png" width="700">
+
+I created a test comment.
+
+<img src="./static/images/edit.png" width="700">
+
+I then edited the text.
+
+<img src="./static/images/like.png" width="700">
+
+I liked the post, inidicated by the black heart.
+
+<img src="./static/images/delete.png" width="700">
+
+I then deleted the comment i edited earlier.
+
+all of these buttons redirected me to the right page and executed exactly what i expected them to do.
+
+In additon I also had other users test the app, and they all reported that its functions and features all worked as expected. They found no broken links or images and all the buttons fired.
+
+
+For the mailing list I created a fake user name Max as you will see in the images below max was able to join the mail list and was notified about this success. All the button in this form work as expected.
+
+<img src="./static/images/maillist2.png" width="700">
+
+<img src="./static/images/maillist.png" width="700">
+
 
 ## Bugs and fixes
 
+### bug 1-sign up
+The sign up page would not load after a user filled in all the details. Pressing submit would cause an error because allauth was trying to send an email to the email that the user would fill in.
 
 ### Solved bugs
+To fix this error i added " EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' " to the back end.
 
 ## Unfixed bugs
+
+None
 
 ## Validator testing
 
 Html - No errors returned from the official w3c validator
 
+<img src="./static/images/validator_html.png" width="700">
+
+<img src="./static/images/validator_html1.png" width="700">
+
+<img src="./static/images/validator_html2.png" width="700">
+
+<img src="./static/images/validator_html3.png" width="700">
+
+<img src="./static/images/validator_html4.png" width="700">
+
+
 CSS - No errors returned from the official (jigsaw) validator
 
-<img src="./assets/images/validator-one.png" width="700">
+<img src="./static/images/validator_css.png" width="700">
 
-<img src="./assets/images/validator-two.png" width="700">
+Javascript - No errors returned from the jshint validator
 
-<img src="./assets/images/validator-three.png" width="700">
+<img src="./static/images/validator_js.png" width="700">
 
-<img src="./assets/images/validator-four.png" width="700">
+Python - The only errors i have are for the line being too long, i opted not to put them on the next line because they were causeing my app to fail. I also got an E701 error because i revered the oder od date by adding a " - " to my completed_on variable.
+
+<img src="./static/images/validator_python.png" width="700">
+
+<img src="./static/images/validator_python1.png" width="700">
+
+<img src="./static/images/validator_python2.png" width="700">
+
+<img src="./static/images/validator_python3.png" width="700">
+
+<img src="./static/images/validator_python4.png" width="700">
+
+<img src="./static/images/validator_python5.png" width="700">
+
+<img src="./static/images/validator_python6.png" width="700">
 
 Accessibility - Confirmation that the colors content is easy to read and the sight is accessible  by running it through lighthouse in DevTools.
 
@@ -134,29 +236,28 @@ Accessibility - Confirmation that the colors content is easy to read and the sig
 
 Furthermore, I have ran my JavaScript file through jshint and have no major issues apart from ES6 warnings. No errors are reported in the DevTools either.
 
-## User testing and feedback
-
-
-
 ## Deployment
 This project has been deployed on heroku. The live link to project is: <a href="https://by-ino-ati.herokuapp.com/" target="_blank">by_ino_ati</a>
 The steps to deploy this project are:
 
-From the GitHub repository navigate to the settings option.
+I created the app on herokus site and i made my set my configvars to match the ones in my workspace 
 
-Select the Main Branch, from the source section.
+From the GitHub I logged into heroku
 
-And after selecting the Main Branch, provide the link to the website.
+I then signed into the app that I wanted to deploy
 
+i changed my debug to False and removed my disablestaic configvar
+
+I added, commited and pushed. And then i pushed to heroku main.
 
 ## Credits/Reference 
 This work is the original work of Inotila Nghaamwa, however the following resources were used to supplement:
 
 ### Code
-I used similar coding approaches to that which was used for the love maths run-through. Particularly the event listeners. Furthermore, i used the social media links from the love-running run-through and made a few small changes to it. 
+I used similar coding approaches to that which was used for the i think and therefore I blog. Particularly the Post and comment method. I therefore added my own custom model in MailingList. In addition I used a similar timeout funciton to make the message alert timeout. 
 
 ### Media
-All images used are the property of Inotila Nghaamwa, I created them images using adobe software. The sound clip used was downloaded on a site that offers free sound clips.
+All images used are the property of Inotila Nghaamwa.
 
 ### Credits 
 
