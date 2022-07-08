@@ -1,10 +1,10 @@
-<img src="./static/images/logoblack.png" width="320px">
+![logo](static/images/logoblack.png)
 
 To the live page from the terminal type:
 
 `python3 manage.py runserver`
 
-To run the webpage click on this link: <a href="https://by-ino-ati.herokuapp.com/" target="_blank">by_ino_ati</a>
+To run the webpage click on this link: [by_ino_ati](https://by-ino-ati.herokuapp.com/)
 
 <img src="./static/images/responsive.png" width="700">
 
@@ -252,18 +252,54 @@ This app also  meets the accessibilty requirements of lighthouse in devtools
 <img src="./static/images/lighthouse.png" width="700">
 
 ## Deployment
-This project has been deployed on heroku. The live link to project is: <a href="https://by-ino-ati.herokuapp.com/" target="_blank">by_ino_ati</a>
-The steps to deploy this project are:
 
-I created the app on herokus site and i made my set my configvars to match the ones in my workspace 
+The live deployed application can be found at [by-ino-ati](https://by-ino-ati.herokuapp.com/).
 
-From the GitHub I logged into heroku
+### Heroku Deployment
 
-I then signed into the app that I wanted to deploy
+This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 
-i changed my debug to False and removed my DISABLE_COLLECTSTATIC configvar
+Deployment steps are as follows, after account setup:
 
-I added, commited and pushed. And then i pushed to heroku main.
+- Select *New* in the top-right corner of your Heroku Dashboard, and select *Create new app* from the dropdown menu.
+- Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select *Create App*.
+- From the new app *Settings*, click *Reveal Config Vars*, and set the following key/value pairs:
+  - `CLOUDINARY_URL` (insert your own Cloudinary API key here)
+  - `DATABASE_URL` (this comes from the **Resources** tab, you can get your own Postgres Database using the Free Hobby Tier)
+  - `SECRET_KEY` (this can be any random secret key)
+
+Heroku needs two additional files in order to deploy properly.
+- requirements.txt
+- Procfile
+
+You can install this project's requirements (where applicable) using: `pip3 install -r requirements.txt`. If you have your own packages that have been installed, then the requirements file needs updated using: `pip3 freeze --local > requirements.txt`
+
+The Procfile can be created with the following command: `echo web: gunicorn byinoati.wsgi > Procfile`
+
+For Heroku deployment, follow these steps to connect your GitHub repository to the newly created app:
+
+Either:
+- Select "Automatic Deployment" from the Heroku app.
+
+Or:
+- In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a <app_name>` (replace app_name with your app, without the angle-brackets)
+- After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type: `git push heroku main`
+
+The frontend terminal should now be connected and deployed to Heroku.
+
+### Local Deployment
+
+*Gitpod* IDE was used to write the code for this project.
+
+To make a local copy of this repository, you can clone the project by typing the follow into your IDE terminal:
+- `git clone https://github.com/Inotila/by_ino_ati.git`
+
+You can install this project's requirements (where applicable) using: `pip3 install -r requirements.txt`.
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Inotila/by_ino_ati)
 
 ## Credits/Reference 
 This work is the original work of Inotila Nghaamwa, however the following resources were used to supplement:
