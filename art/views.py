@@ -21,9 +21,13 @@ def home(request):
                 mail_form.instance.user = user
                 mail_form.save()
                 if request.POST.get("join"):
-                    messages.success(request, "You have successfully joined the mailing list!")
+                    messages.success(
+                        request,
+                        "You have successfully joined the mailing list!")
                 else:
-                    messages.error(request, "You have select to not join the mailing list.")
+                    messages.error(
+                        request,
+                        "You have select to not join the mailing list.")
                 submitted_form = 1
     else:
         submitted_form = 0
@@ -41,7 +45,7 @@ def art_views(request):
     """ function that displays post on art.html
     depending on what category they are listed as"""
     category = request.GET['category']
-    all_art = Post.objects.filter(type=category)
+    all_art = Post.objects.filter(type=category, status=1)
     template = 'art.html'
     context = {
         'all_art': all_art,
@@ -91,7 +95,9 @@ class ArtDetails(View):
             comment = user_comments.save(commit=False)
             comment.post = post
             comment.save()
+            messages.success(request, "You have successfully commented")
         else:
+            messages.error(request, "Something went wrong,try again!")
             user_comments = CommentForm()
 
         return render(
@@ -107,15 +113,18 @@ class ArtDetails(View):
 
 
 def edit_comment(request, comment_id,):
-    """ this is handles the edit button. it gets the comment id from django. the
-     redirect path need to be fixed to redirect back to the art details
+    """
+    this is handles the edit button. it gets the comment id from django.
+    the redirect path need to be fixed to redirect back to the art details
     """
     comment = get_object_or_404(Comment, id=comment_id)
     if request.method == 'POST':
         user_comments = CommentForm(request.POST, instance=comment)
         if user_comments.is_valid():
             user_comments.save()
+            messages.success(request, "You have successfully updated comment")
             return redirect(reverse('art_details', args=[comment.post.slug]))
+        messages.error(request, "Something went wrong,try again!")
     post = comment.post
     user_comments = CommentForm(instance=comment)
     context = {
@@ -132,6 +141,7 @@ def delete_comment(request, comment_id,):
     redirects the the redirect need to be fixed"""
     comment = get_object_or_404(Comment, id=comment_id)
     comment.delete()
+    messages.success(request, "You have successfully deleted comment")
     return redirect(reverse('art_details', args=[comment.post.slug]))
 
 
