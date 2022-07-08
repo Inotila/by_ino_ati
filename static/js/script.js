@@ -1,3 +1,5 @@
+/* jshint esversion: 11 */
+
 // this function removes the alert after 5 seconds
 setTimeout(function () {
     let messages = document.getElementById("alert-message");
