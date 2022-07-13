@@ -184,13 +184,13 @@ For the mailing list I created a fake user name Max as you will see in the image
 
 ## wireframes and mockups
 
-![an image of the mockups done during the design process](static/imagesmockups.jpeg)
+![an image of the mockups done during the design process](static/images/mockups.jpeg)
 
-![an image of the mockups done during the design process](static/imagesmockups1.jpeg)
+![an image of the mockups done during the design process](static/images/mockups1.jpeg)
 
-![an image of the mockups done during the design process](static/imagesmockups2.jpeg)
+![an image of the mockups done during the design process](static/images/mockups2.jpeg)
 
-![an image of the mockups done during the design process](static/imagesmockups3.jpeg)
+![an image of the mockups done during the design process](static/images/mockups3.jpeg)
 
 ## Bugs and fixes
 
