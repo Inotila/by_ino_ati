@@ -184,6 +184,10 @@ For the mailing list I created a fake user name Max as you will see in the image
 
 ## wireframes and mockups
 
+### Entity relationshipdiagram
+
+![an image of the mockups done during the design process](static/images/entityrelationshipdiagram.jpg)
+
 ### wireframes
 
 Home view wireframe
