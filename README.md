@@ -186,9 +186,12 @@ For the mailing list I created a fake user name Max as you will see in the image
 
 ### Entity relationship diagram
 
+I created this entity relationship diagram to guide me in creating my data structure in the models.
+
 ![an image of the mockups done during the design process](static/images/entityrelationshipdiagram.jpg)
 
 ### Wireframes
+I created these wireframes during the design process using Figma. Below are the images of each page found on the app.
 
 Home view wireframe
 ![an image of the mock-ups done during the design process](static/images/wireframe1.jpg)
