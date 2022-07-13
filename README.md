@@ -6,8 +6,7 @@ To the live page from the terminal type:
 
 To run the webpage click on this link: [by_ino_ati](https://by-ino-ati.herokuapp.com/)
 
-<img src="./static/images/responsive.png" width="700">
-
+![Am I repsonsive image](static/images/responsive.png)
 # by_ino_ati(Portfolio 4)
 
 This project is for my final submission for my forth milestone. The aim of the project is to code and deploy a responsive website using Java Script, python+ django, HTML and CSS. 
@@ -42,43 +41,42 @@ In addition, the UI is easy to understand and navigate. Furthermore, the site of
 
 ## Actual Features (end product)
 1. Welcome/home page -
-<br>
-<img src="./static/images/homepage.png" width="700">
-<br>
+
+![Home page image](static/images/homepage.png)
 On this page the user is welcomed, and the tone/vibe of the game is set. From this page first-time users will be able to know that this is an art application.
 
 In addition, the home page offers navigation buttons that are simply titled in order for them to easily understand what exactly it is that the button will do/take them to. 
 
 2. Art view/grid pages(Painting, Ink, Pencil) - 
-<br>
-<img src="./static/images/gridview.png" width="700">
-<br>
-<img src="./static/images/gridview1.png" width="700">
-<br>
-<img src="./static/images/gridview2.png" width="700">
-<br>
+
+![grid view of the art display](static/images/gridview.png)
+
+![grid view of the art display](static/images/gridview1.png)
+
+![grid view of the art display](static/images/gridview2.png)
+
 This page is where users can view all the content on offer in their categories. On this page user can also see how many likes a specific post has. And they can click on the page title to further view a large sigular image.
 
 
 3. Art detail page - 
-<br>
-<img src="./static/images/comment.png" width="700">
-<img src="./static/images/like.png" width="700">
-<br>
+
+![an image of the comment section in the app](static/images/comment.png)
+![an image of the like section in the app](static/images/like.png)
+
 This page contains a single view of the image clicked on by the user from the art view page. On this page users can get a better look at the content. 
 
 In addition users who are signed in can like the content and they can leave and edit comments. This a platform that art lovers can discuss what they are seeing.
 
 4. SignUp/signout  - 
-<br>
-<img src="./static/images/signup.png" width="700">
-<br>
-<img src="./static/images/signout.png" width="700">
-<br>
-<img src="./static/images/alerts.png" width="700">
-<br>
-<img src="./static/images/alerts1.png" width="700">
-<br>
+
+![an image of the signup section in the app](static/images/signup.png)
+
+![an image of the signout section in the app](static/images/signout.png)
+
+![an image of the alerts in the app](static/images/alerts.png)
+
+![an image of the alerts in the app](static/images/alerts1.png)
+
 On this page user can sign up to gain full access to apps functionality. It is an easy and quick process for the user. When user is logged the nav bar, in addition to a message alert , will let them know that they have logged in because the option to login will change to log out.
 
 In addtion the app has an easy signout page.
