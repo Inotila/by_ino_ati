@@ -6,38 +6,38 @@ To the live page from the terminal type:
 
 To run the webpage click on this link: [by_ino_ati](https://by-ino-ati.herokuapp.com/)
 
-![Am I repsonsive image](static/images/responsive.png)
+![Am I responsive image](static/images/responsive.png)
 # by_ino_ati(Portfolio 4)
 
 This project is for my final submission for my forth milestone. The aim of the project is to code and deploy a responsive website using Java Script, python+ django, HTML and CSS. 
 
 ## About by_ino_ati
 
-Is a web application where users can view and interact with art by artist Inotila Nghaamwa(the owner of the page). 
+Is a web application where users can view and interact with art by artist Inotila Nghaamwa (the owner of the page). 
 
-The site owner is an artist, and would like to offer users a platform where they can view and interact with his art work by being able to like and comment on individial picuters. In addition the owner would like to be able to handle data at the back end and make post on to the page using the backend. Furthermore, the owner would like to also be able to commnicate the latest delopments to his users via email, so he want to give user the opportuinty to signup for a mailing list. The owner would like to keep adding features to the site and updating it to increase the way in which site users can engage with the content,the owner and each other.
+The site owner is an artist, and would like to offer users a platform where they can view and interact with his art work by being able to like and comment on individual pictures. In addition the owner would like to be able to handle data at the back end and make post on to the page using the backend. Furthermore, the owner would like to also be able to communicate the latest art works to his users via email, so he want to give user the opportunity to sign up for a mailing list. The owner would like to keep adding features to the site and updating it to increase the way in which site users can engage with the content, the owner and each other.
 
-The users are primarily art enthusists, art collectors, and other peopler in the artist commuinity. These user would like to easily navigate the application and be able to interact with the content and get feedback from the app and other users. In addition user want to be able to clearly view the content in a familiar manner that they are use to on applications such as instagram.
+The users are primarily art enthusiasts, art collectors, and other people in the artistic community. These user would like to easily navigate the application and be able to interact with the content and get feedback from the app and other users. In addition user want to be able to clearly view the content in a familiar manner that they are familiar with to on applications such as Instagram.
 
 ## Value
 
-users can view the art work,in well categorized pages and also in full single view. In addition, users can interact with the conten by liking and commenting on it. Users also have the ability to delete and update their comments, the app has a full CRUD fuctionality.
+Users can view the art work, in well categorized pages and also in full single view. In addition, users can interact with the content by liking and commenting on it. Users also have the ability to delete and update their comments, the app has a full CRUD functionality.
 
 In addition, the UI is easy to understand and navigate. Furthermore, the site offers the user feedback alerting the users on consequence of their actions are. The app has an easy sign up, login and logout pages. Only users who are signed up can comment or like the content. This gives the owner the ability to get valuable data from the users to interact with them, and users get the ability to change and add data as they please.
 
 ## Potential features (before starting)
 
-1. a grid view of art works
-2. like content and view number of likes a post has.
-3. Comment on post and view comments from other users and the amount of comments a post recieved.
+1. A grid view of art works
+2. Like content and view number of likes a post has.
+3. Comment on post and view comments from other users and the amount of comments a post received.
 4. An easy to understand UI.
 5. An easy signup process to be authenticated.
-6. view detials about the art work.
-7. See the availabilty to purchase the art work
-8. live bids.
+6. View details about the art work.
+7. See the availability to purchase the art work
+8. Live bids.
 9. Users will be able to bid on art works.
-10. Share button to allow users to share posts on other social medias.
-11. A booking page where site users can book artist for a commision.
+10. Share button to allow users to share posts on other social media.
+11. A booking page where site users can book artist for a commission.
 
 ## Actual Features (end product)
 1. Welcome/home page -
@@ -47,7 +47,7 @@ On this page the user is welcomed, and the tone/vibe of the game is set. From th
 
 In addition, the home page offers navigation buttons that are simply titled in order for them to easily understand what exactly it is that the button will do/take them to. 
 
-2. Art view/grid pages(Painting, Ink, Pencil) - 
+2. Art view/grid pages (Painting, Ink, Pencil) - 
 
 ![grid view of the art display](static/images/gridview.png)
 
@@ -55,7 +55,7 @@ In addition, the home page offers navigation buttons that are simply titled in o
 
 ![grid view of the art display](static/images/gridview2.png)
 
-This page is where users can view all the content on offer in their categories. On this page user can also see how many likes a specific post has. And they can click on the page title to further view a large sigular image.
+This page is where users can view all the content on offer in their categories. On this page user can also see how many likes a specific post has. And they can click on the page title to further view a large singular image.
 
 
 3. Art detail page - 
@@ -67,25 +67,25 @@ This page contains a single view of the image clicked on by the user from the ar
 
 In addition users who are signed in can like the content and they can leave and edit comments. This a platform that art lovers can discuss what they are seeing.
 
-4. SignUp/signout  - 
+4. Signup/sign-out - 
 
 ![an image of the signup section in the app](static/images/signup.png)
 
-![an image of the signout section in the app](static/images/signout.png)
+![an image of the sign-out section in the app](static/images/signout.png)
 
 ![an image of the alerts in the app](static/images/alerts.png)
 
 ![an image of the alerts in the app](static/images/alerts1.png)
 
-On this page user can sign up to gain full access to apps functionality. It is an easy and quick process for the user. When user is logged the nav bar, in addition to a message alert , will let them know that they have logged in because the option to login will change to log out.
+On this page user can sign up to gain full access to apps functionality. It is an easy and quick process for the user. When user is logged the nav bar, in addition to a message alert, will let them know that they have logged in because the option to login will change to log out.
 
-In addtion the app has an easy signout page.
+In addition, the app has an easy sign-out page.
 
 4. A functioning database in the backend-
 
 ![an image of the data in the app](static/images/data.png)
 
-This application that has a easy to navigate admin pannel where the owner can view data and make post to the mainpage. In addition the owner can also create drafts post that he can complelet at a later stage.
+This application that has a easy to navigate admin panel where the owner can view data and make post to the main page. In addition the owner can also create drafts post that he can completed at a later stage.
 
 5. Logo - 
 
@@ -110,7 +110,7 @@ Users can join a mailing list or opt out of it. This mailing list gives user the
 The owner can user this to get data to communicate directly with site users.
 
 ## Future Features
-1. An Status to bar that will show the availabilty of the arts pieces and their prices
+1. A Status to bar that will show the availability of the arts pieces and their prices
 2. Users will be able to share post to other apps
 3. Users will be able to make bids on art pieces
 4. User will be able to like content from the grid view page to
@@ -124,7 +124,7 @@ i created a super user to make post to app and view the data from the back end. 
 
 ![an image of the testing done on the app](static/images/data.png)
 
-I created also logged in as a user in the front end to ensure that the post are rendering as expected and they did. The signup function works, and i signed out and back in again just to ensure that both the signout and signin works
+I created also logged in as a user in the front end to ensure that the post are rendering as expected and they did. The signup function works, and i signed out and back in again just to ensure that both the sign-out and sign-in works
 
 ![an image of the testing done on the app](static/images/signup.png)
 
@@ -132,14 +132,14 @@ Signed up with a fake user
 
 ![an image of the testing done on the app]static/images/signout.png)
 
-Signed out out fake
+Signed out of fake
 
 
 I started by testing that all the links in the navbar and the home page buttons work and lead to where they are intended and they did. The logo will send you home, as will the home link in navbar. 
 
 ![an image of the testing done on the app](static/images/homepage.png)
 
-The ink,painting, and pencil links in the navbar and the homepage buttons  all lead to their respective pages
+The ink, painting, and pencil links in the navbar and the homepage buttons all lead to their respective pages
 
 ![an image of the testing done on the app](static/images/gridview.png)
 
@@ -165,15 +165,15 @@ I then edited the text.
 
 ![an image of the testing done on the app](static/images/like.png)
 
-I liked the post, inidicated by the black heart.
+I liked the post, indicated by the black heart.
 
 ![an image of the testing done on the app](static/images/delete.png)
 
 I then deleted the comment i edited earlier.
 
-all of these buttons redirected me to the right page and executed exactly what i expected them to do.
+All of these buttons redirected me to the right page and executed exactly what i expected them to do.
 
-In additon I also had other users test the app, and they all reported that its functions and features all worked as expected. They found no broken links or images and all the buttons fired.
+In addition, I also had other users test the app, and they all reported that its functions and features all worked as expected. They found no broken links or images and all the buttons fired.
 
 
 For the mailing list I created a fake user name Max as you will see in the images below max was able to join the mail list and was notified about this success. All the button in this form work as expected.
@@ -182,39 +182,39 @@ For the mailing list I created a fake user name Max as you will see in the image
 
 ![an image of the testing done on the app](static/images/maillist.png)
 
-## wireframes and mockups
+## Wireframes and mock-ups
 
-### Entity relationshipdiagram
+### Entity relationship diagram
 
 ![an image of the mockups done during the design process](static/images/entityrelationshipdiagram.jpg)
 
-### wireframes
+### Wireframes
 
 Home view wireframe
-![an image of the mockups done during the design process](static/images/wireframe1.jpg)
+![an image of the mock-ups done during the design process](static/images/wireframe1.jpg)
 
 Art view wireframe
-![an image of the mockups done during the design process](static/images/wireframe2.jpg)
+![an image of the mock-ups done during the design process](static/images/wireframe2.jpg)
 
 Details view wireframe
-![an image of the mockups done during the design process](static/images/wireframe3.jpg)
+![an image of the mock-ups done during the design process](static/images/wireframe3.jpg)
 
-Signin view wireframe
-![an image of the mockups done during the design process](static/images/wireframe4.jpg)
+Sign-in view wireframe
+![an image of the mock-ups done during the design process](static/images/wireframe4.jpg)
 
 Signup view wireframe
-![an image of the mockups done during the design process](static/images/wireframe5.jpg)
+![an image of the mock-ups done during the design process](static/images/wireframe5.jpg)
 
-Signout view wireframe
-![an image of the mockups done during the design process](static/images/wireframe6.jpg)
+Sign-out view wireframe
+![an image of the mock-ups done during the design process](static/images/wireframe6.jpg)
 
-![an image of the mockups done during the design process](static/images/mockups.jpeg)
+![an image of the mock-ups done during the design process](static/images/mockups.jpeg)
 
-![an image of the mockups done during the design process](static/images/mockups1.jpeg)
+![an image of the mock-ups done during the design process](static/images/mockups1.jpeg)
 
-![an image of the mockups done during the design process](static/images/mockups2.jpeg)
+![an image of the mock-ups done during the design process](static/images/mockups2.jpeg)
 
-![an image of the mockups done during the design process](static/images/mockups3.jpeg)
+![an image of the mock-ups done during the design process](static/images/mockups3.jpeg)
 
 ## Bugs and fixes
 
@@ -251,7 +251,7 @@ Javascript - No errors returned from the jshint validator
 
 ![an image of the validators that the app was run through](static/images/validator_js.png)
 
-Python - The only errors i have are for the line being too long, i opted not to put them on the next line because they were causeing my app to fail. I also got an E701 error because i revered the oder od date by adding a " - " to my completed_on variable.
+Python - The only errors I have are for the line being too long, i opted not to put them on the next line because they were causing my app to fail. I also got an E701 error because I reversed the order od date by adding a " - " to my completed_on variable.
 
 ![an image of the validators that the app was run through](static/images/validator_python.png)
 
@@ -267,7 +267,7 @@ Python - The only errors i have are for the line being too long, i opted not to 
 
 ![an image of the validators that the app was run through](static/images/validator_python6.png)
 
-This app also  meets the accessibilty requirements of lighthouse in devtools
+This app also meets the accessibility requirements of lighthouse in devtools
 
 ![an image of the validators that the app was run through](static/images/lighthouse.png)
 
@@ -325,7 +325,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 This work is the original work of Inotila Nghaamwa, however the following resources were used to supplement:
 
 ### Code
-I used similar coding approaches to that which was used for the i think and therefore I blog. Particularly the Post and comment method. I therefore added my own custom model in MailingList. In addition I used a similar timeout funciton to make the message alert timeout. 
+I used similar coding approaches to that which was used for the i think and therefore I blog. Particularly the Post and comment method. I therefore added my own custom model in MailingList. In addition I used a similar timeout function to make the message alert timeout. 
 
 ### Media
 All images used are the property of Inotila Nghaamwa.
