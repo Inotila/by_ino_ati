@@ -82,15 +82,15 @@ On this page user can sign up to gain full access to apps functionality. It is a
 In addtion the app has an easy signout page.
 
 4. A functioning database in the backend-
-<br>
-<img src="./static/images/data.png" width="700">
-<br>
+
+![an image of the data in the app](static/images/data.png)
+
 This application that has a easy to navigate admin pannel where the owner can view data and make post to the mainpage. In addition the owner can also create drafts post that he can complelet at a later stage.
 
 5. Logo - 
-<br>
-<img src="./static/images/logoblack.png" width="700">
-<br>
+
+![an image of the logo in the app](static/images/logoblack.png)
+
 A nice logo that also serves as a home button.
 
 6. Footer and social media links-
@@ -100,11 +100,11 @@ A footer to keep social media links. These links are links that open in new tabs
 The social media links are useful for the users because they encourage the user to get in contact with the developer on other platforms (Facebook, Instagram and YouTube).
 
 7. Join Mail list
-<br>
-<img src="./static/images/maillist2.png" width="700">
-<br>
-<img src="./static/images/maillist.png" width="700">
-<br>
+
+![an image of the mailing list section in the app](static/images/maillist2.png)
+
+![an image of the mailing list section in the app](static/images/maillist.png)
+
 Users can join a mailing list or opt out of it. This mailing list gives user the option of getting timely updates about new art pieces and sales that are live on the app.
 
 The owner can user this to get data to communicate directly with site users.
@@ -121,54 +121,53 @@ The owner can user this to get data to communicate directly with site users.
 I did manual test to ensure that the apps features works as expected.
 
 i created a super user to make post to app and view the data from the back end. And this all worked. All post on the app where upload via the admin panel.
-<br>
-<img src="./static/images/data.png" width="700">
-<br>
+
+![an image of the testing done on the app](static/images/data.png)
+
 I created also logged in as a user in the front end to ensure that the post are rendering as expected and they did. The signup function works, and i signed out and back in again just to ensure that both the signout and signin works
-<br>
-<img src="./static/images/signup.png" width="700">
-<br>
+
+![an image of the testing done on the app](static/images/signup.png)
+
 Signed up with a fake user 
-<br>
-<img src="./static/images/signout.png" width="700">
-<br>
+
+![an image of the testing done on the app]static/images/signout.png)
+
 Signed out out fake
 
 
 I started by testing that all the links in the navbar and the home page buttons work and lead to where they are intended and they did. The logo will send you home, as will the home link in navbar. 
-<br>
-<img src="./static/images/homepage.png" width="700">
-<br>
+
+![an image of the testing done on the app](static/images/homepage.png)
 
 The ink,painting, and pencil links in the navbar and the homepage buttons  all lead to their respective pages
-<br>
-<img src="./static/images/gridview.png" width="700">
+
+![an image of the testing done on the app](static/images/gridview.png)
 
 a view of the page that painting button leads to
-<br>
-<img src="./static/images/gridview1.png" width="700">
+
+![an image of the testing done on the app](static/images/gridview1.png)
 
 a view of the page that ink button leads to
-<br>
-<img src="./static/images/gridview2.png" width="700">
+
+![an image of the testing done on the app](static/images/gridview2.png)
 
 a view of the page that pencil button leads to
-<br>
+
 I tested that like, comment, edit and delete buttons all work by going to the page of a single post and liked the post, created a comment, edited it and then deleted it.
 
-<img src="./static/images/comment.png" width="700">
+![an image of the testing done on the app](static/images/comment.png)
 
 I created a test comment.
 
-<img src="./static/images/edit.png" width="700">
+![an image of the testing done on the app](static/images/edit.png)
 
 I then edited the text.
 
-<img src="./static/images/like.png" width="700">
+![an image of the testing done on the app](static/images/like.png)
 
 I liked the post, inidicated by the black heart.
 
-<img src="./static/images/delete.png" width="700">
+![an image of the testing done on the app](static/images/delete.png)
 
 I then deleted the comment i edited earlier.
 
@@ -179,9 +178,9 @@ In additon I also had other users test the app, and they all reported that its f
 
 For the mailing list I created a fake user name Max as you will see in the images below max was able to join the mail list and was notified about this success. All the button in this form work as expected.
 
-<img src="./static/images/maillist2.png" width="700">
+![an image of the testing done on the app](static/images/maillist2.png)
 
-<img src="./static/images/maillist.png" width="700">
+![an image of the testing done on the app](static/images/maillist.png)
 
 ## wireframes and mockups
 
