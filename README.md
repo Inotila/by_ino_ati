@@ -208,44 +208,44 @@ None
 
 Html - No errors returned from the official w3c validator
 
-<img src="./static/images/validator_html.png" width="700">
+![an image of the validators that the app was run through](static/images/validator_html.png)
 
-<img src="./static/images/validator_html1.png" width="700">
+![an image of the validators that the app was run through](static/images/validator_html1.png)
 
-<img src="./static/images/validator_html2.png" width="700">
+![an image of the validators that the app was run through](static/images/validator_html2.png)
 
-<img src="./static/images/validator_html3.png" width="700">
+![an image of the validators that the app was run through](static/images/validator_html3.png)
 
-<img src="./static/images/validator_html4.png" width="700">
+![an image of the validators that the app was run through](static/images/validator_html4.png)
 
 
 CSS - No errors returned from the official (jigsaw) validator
 
-<img src="./static/images/validator_css.png" width="700">
+![an image of the validators that the app was run through](static/images/validator_css.png)
 
 Javascript - No errors returned from the jshint validator
 
-<img src="./static/images/validator_js.png" width="700">
+![an image of the validators that the app was run through](static/images/validator_js.png)
 
 Python - The only errors i have are for the line being too long, i opted not to put them on the next line because they were causeing my app to fail. I also got an E701 error because i revered the oder od date by adding a " - " to my completed_on variable.
 
-<img src="./static/images/validator_python.png" width="700">
+![an image of the validators that the app was run through](static/images/validator_python.png)
 
-<img src="./static/images/validator_python1.png" width="700">
+![an image of the validators that the app was run through](static/images/validator_python1.png)
 
-<img src="./static/images/validator_python2.png" width="700">
+![an image of the validators that the app was run through](static/images/validator_python2.png)
 
-<img src="./static/images/validator_python3.png" width="700">
+![an image of the validators that the app was run through](static/images/validator_python3.png)
 
-<img src="./static/images/validator_python4.png" width="700">
+![an image of the validators that the app was run through](static/images/validator_python4.png)
 
-<img src="./static/images/validator_python5.png" width="700">
+![an image of the validators that the app was run through](static/images/validator_python5.png)
 
-<img src="./static/images/validator_python6.png" width="700">
+![an image of the validators that the app was run through](static/images/validator_python6.png)
 
 This app also  meets the accessibilty requirements of lighthouse in devtools
 
-<img src="./static/images/lighthouse.png" width="700">
+![an image of the validators that the app was run through](static/images/lighthouse.png)
 
 ## Deployment
 
