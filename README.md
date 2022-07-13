@@ -184,6 +184,26 @@ For the mailing list I created a fake user name Max as you will see in the image
 
 ## wireframes and mockups
 
+### wireframes
+
+Home view wireframe
+![an image of the mockups done during the design process](static/images/wireframe1.jpg)
+
+Art view wireframe
+![an image of the mockups done during the design process](static/images/wireframe2.jpg)
+
+Details view wireframe
+![an image of the mockups done during the design process](static/images/wireframe3.jpg)
+
+Signin view wireframe
+![an image of the mockups done during the design process](static/images/wireframe4.jpg)
+
+Signup view wireframe
+![an image of the mockups done during the design process](static/images/wireframe5.jpg)
+
+Signout view wireframe
+![an image of the mockups done during the design process](static/images/wireframe6.jpg)
+
 ![an image of the mockups done during the design process](static/images/mockups.jpeg)
 
 ![an image of the mockups done during the design process](static/images/mockups1.jpeg)
