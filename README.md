@@ -118,69 +118,73 @@ The owner can user this to get data to communicate directly with site users.
 
 ## Testing
 
-I did manual test to ensure that the apps features works as expected.
+Through out the design process I did user tests with 5 individuals. These Test were a set of goals/intstructions for the users to achieve in order to see whether; the app navigation was clear, the intention of the app was clear, whether all features of the app worked, and to achieve general feed back on th UI and UX. 
 
-i created a super user to make post to app and view the data from the back end. And this all worked. All post on the app where upload via the admin panel.
+### User test
+
+According to the feedback my users gave me the navigation of the application was simple to understand and navigate, and furthermore the understood what the intention of the app was from the momment they landed on the home page. Userwere asked to sign up, like a post and comment on a post. Furthermore, they were tasked with editing and then deleting a post which they did successfully. The users said they enjoyed the app and that it was a very similar experience to social media which made it relatable but with less distraction.
+
+I too did these manual test to ensure that the apps features works as expected. and below are the results:
+
+### Admin test
 
 ![an image of the testing done on the app](static/images/data.png)
+Figure 1: Admin pannel
 
-I created also logged in as a user in the front end to ensure that the post are rendering as expected and they did. The signup function works, and i signed out and back in again just to ensure that both the sign-out and sign-in works
+I created a super user to make post on the app and view the data from the back end(see Figure 1). And this all worked. All post on the app where upload via the admin panel and I could view users who signed up to the app and their comments. In addition, I could see if they joined the mailing list or not.
+
+### Signup, sign-in and sign-out test
 
 ![an image of the testing done on the app](static/images/signup.png)
+Figure 2: sign-up
 
-Signed up with a fake user 
+![an image of the testing done on the app](static/images/signout.png)
+Figure 3: sign-out
 
-![an image of the testing done on the app]static/images/signout.png)
+I created also logged in as a regular user(Pokemon) in the front end to ensure that the post are rendering as expected(see Figure 2), that all the pages are displaying with no broken links, and that the UI looks as intended. The signup function works, I could sign in and out(see Figure 3) without any issues.
 
-Signed out of fake
-
-
-I started by testing that all the links in the navbar and the home page buttons work and lead to where they are intended and they did. The logo will send you home, as will the home link in navbar. 
-
+### Home page test
 ![an image of the testing done on the app](static/images/homepage.png)
+Figure 4: Home page view
 
-The ink, painting, and pencil links in the navbar and the homepage buttons all lead to their respective pages
+I started by testing that all the links in the navbar and the home page buttons work and lead to where they are intended and they did(see Figure 4). The logo will send you home, as will the home link in navbar. The ink, painting, and pencil links in the navbar and the homepage buttons all lead to their respective pages.
 
+### Art page test
 ![an image of the testing done on the app](static/images/gridview.png)
-
-a view of the page that painting button leads to
+Figure 5: Art page view for Paintings
 
 ![an image of the testing done on the app](static/images/gridview1.png)
-
-a view of the page that ink button leads to
+Figure 6: Art page view for Ink
 
 ![an image of the testing done on the app](static/images/gridview2.png)
+Figure 7: Art page view for Pencil
 
-a view of the page that pencil button leads to
+Using the account of the fake user I created I test to see if all the art view were displaying and that the images were rendering properly(see Figure 5, 6, & 7). All the images were rending properly. I did however discover that the link cound tag was displaying unwanted text when the user is logoed out to I had to fix that.
 
-I tested that like, comment, edit and delete buttons all work by going to the page of a single post and liked the post, created a comment, edited it and then deleted it.
+### Like, comment, edit, and delete test
 
 ![an image of the testing done on the app](static/images/comment.png)
-
-I created a test comment.
+Figure 8: test comment
 
 ![an image of the testing done on the app](static/images/edit.png)
-
-I then edited the text.
+Figure 9: edited the text.
 
 ![an image of the testing done on the app](static/images/like.png)
-
-I liked the post, indicated by the black heart.
+Figure 10: liked  post
 
 ![an image of the testing done on the app](static/images/delete.png)
+Figure 11: deleted the comment
 
-I then deleted the comment i edited earlier.
+I tested that like, comment, edit and delete buttons all work by going to the page of a single post and liked the post, created a comment, edited it and then deleted it. I created a test comment (see Figure 8). I then edited the text (see Figure 9).I liked the post, indicated by the black heart (see Figure 10). I then deleted the comment i edited earlier(see Figure 11).All of these buttons redirected me to the right page and executed exactly what i expected them to do in terms of CRUD functionality.
 
-All of these buttons redirected me to the right page and executed exactly what i expected them to do.
-
-In addition, I also had other users test the app, and they all reported that its functions and features all worked as expected. They found no broken links or images and all the buttons fired.
-
-
-For the mailing list I created a fake user name Max as you will see in the images below max was able to join the mail list and was notified about this success. All the button in this form work as expected.
-
+### Mailing list test
 ![an image of the testing done on the app](static/images/maillist2.png)
+Figure 12: Mailist option just below the buttons(ink, paintings and pencil)
 
 ![an image of the testing done on the app](static/images/maillist.png)
+Figure 13: Mailist option just below the buttons(ink, paintings and pencil) with a success message below the nav bar
+
+For the mailing list I created a fake user name, Max,max was able to join the mail list by clicking the join option and then the submit button(see Figure 12). After joining, Max was notified about this success(see Figure 13). From this test I could conclude that all the button in this form work as expected.
 
 ## Wireframes and mock-ups
 
