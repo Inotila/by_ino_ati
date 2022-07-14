@@ -118,11 +118,11 @@ The owner can user this to get data to communicate directly with site users.
 
 ## Testing
 
-Through out the design process I did user tests with 5 individuals. These Test were a set of goals/intstructions for the users to achieve in order to see whether; the app navigation was clear, the intention of the app was clear, whether all features of the app worked, and to achieve general feed back on th UI and UX. 
+Through out the design process I did user tests with 5 individuals. These Test were a set of tasks which had an acceptance criteria for the users to achieve in order to see whether; to generally see if all the project issues were completed, the app navigation was clear, the intention of the app was clear, whether all features of the app worked, and to achieve general feed back on th UI and UX. 
 
 ### User test
 
-According to the feedback my users gave me the navigation of the application was simple to understand and navigate, and furthermore the understood what the intention of the app was from the momment they landed on the home page. Userwere asked to sign up, like a post and comment on a post. Furthermore, they were tasked with editing and then deleting a post which they did successfully. The users said they enjoyed the app and that it was a very similar experience to social media which made it relatable but with less distraction.
+According to the feedback my users gave me the navigation of the application was simple to understand and navigate, and furthermore the understood what the intention of the app was from the momment they landed on the home page. User were asked to sign up, like a post and comment on a post. Furthermore, they were tasked with editing and then deleting a post which they did successfully. The users said they enjoyed the app and that it was a very similar experience to social media which made it relatable but with less distraction.
 
 I too did these manual test to ensure that the apps features works as expected. and below are the results:
 
@@ -197,31 +197,35 @@ I created this entity relationship diagram to guide me in creating my data struc
 ### Wireframes
 I created these wireframes during the design process using Figma. Below are the images of each page found on the app.
 
-Home view wireframe
+#### Home view wireframe
 ![an image of the mock-ups done during the design process](static/images/wireframe1.jpg)
 
-Art view wireframe
+#### Art view wireframe
 ![an image of the mock-ups done during the design process](static/images/wireframe2.jpg)
 
-Details view wireframe
+#### Details view wireframe
 ![an image of the mock-ups done during the design process](static/images/wireframe3.jpg)
 
-Sign-in view wireframe
+#### Sign-in view wireframe
 ![an image of the mock-ups done during the design process](static/images/wireframe4.jpg)
 
-Signup view wireframe
+#### Signup view wireframe
 ![an image of the mock-ups done during the design process](static/images/wireframe5.jpg)
 
-Sign-out view wireframe
+#### Sign-out view wireframe
 ![an image of the mock-ups done during the design process](static/images/wireframe6.jpg)
 
+### Project task list 
+I made a project task list to ensure I was aware of all the reuirements and that all them were met(see figure A,B, and C). Below are the three list I worked with. 
+
 ![an image of the mock-ups done during the design process](static/images/mockups.jpeg)
+Figure A - a list of the tasks that I had to perfom to bring the app to life. 
 
 ![an image of the mock-ups done during the design process](static/images/mockups1.jpeg)
-
-![an image of the mock-ups done during the design process](static/images/mockups2.jpeg)
+Figure B - a list of the requirements to meet the pass criteria for the project. 
 
 ![an image of the mock-ups done during the design process](static/images/mockups3.jpeg)
+Figure C - a list of the requirements to meet the pass criteria for the project. 
 
 ## Bugs and fixes
 
