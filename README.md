@@ -203,6 +203,12 @@ Figure 13: Mailist option just below the buttons(ink, paintings and pencil) with
 
 For the mailing list I created a fake user name, Max,max was able to join the mail list by clicking the join option and then the submit button(see Figure 12). After joining, Max was notified about this success(see Figure 13). From this test I could conclude that all the button in this form work as expected.
 
+### Accessibility and perfomance test
+![an image of the validators that the app was run through](static/images/lighthouse.png)
+Figure 14: Lighthouse report
+
+This app also meets the accessibility requirements of lighthouse in devtools. I ran it through light house and it got above 90% for all the criteria (see Figure 14).
+
 ## Wireframes and mock-ups
 
 ### Entity relationship diagram
@@ -294,10 +300,6 @@ Python - The only errors I have are for the line being too long, i opted not to 
 ![an image of the validators that the app was run through](static/images/validator_python5.png)
 
 ![an image of the validators that the app was run through](static/images/validator_python6.png)
-
-This app also meets the accessibility requirements of lighthouse in devtools
-
-![an image of the validators that the app was run through](static/images/lighthouse.png)
 
 ## Deployment
 
