@@ -17,7 +17,7 @@ Is a web application where users can view and interact with art by artist Inotil
 
 The site owner is an artist, and would like to offer users a platform where they can view and interact with his art work by being able to like and comment on individual pictures. In addition the owner would like to be able to handle data at the back end and make post on to the page using the backend. Furthermore, the owner would like to also be able to communicate the latest art works to his users via email, so he want to give user the opportunity to sign up for a mailing list. The owner would like to keep adding features to the site and updating it to increase the way in which site users can engage with the content, the owner and each other.
 
-The users are primarily art enthusiasts, art collectors, and other people in the artistic community. These user would like to easily navigate the application and be able to interact with the content and get feedback from the app and other users. In addition user want to be able to clearly view the content in a familiar manner that they are familiar with to on applications such as Instagram.
+The users are primarily art enthusiasts, art collectors, and other people in the artistic community. These user would like to easily navigate the application and be able to interact with the content and other users on the app. Furthermore, get feedback from the app when they perform an action. In addition user want to be able to clearly view the content in a manner that they are familiar with like on applications like Instagram.
 
 ## Value
 
@@ -118,13 +118,13 @@ The owner can user this to get data to communicate directly with site users.
 
 ## Testing
 
-Through out the design process I did user tests with 5 individuals. These Test were a set of tasks which had an acceptance criteria for the users to achieve in order to see whether; to generally see if all the project issues were completed, the app navigation was clear, the intention of the app was clear, whether all features of the app worked, and to achieve general feed back on th UI and UX. 
+Throughout the design process I did user tests with 5 individuals. These Test were a set of tasks which had an acceptance criteria for the users to achieve in order to see whether; to generally see if all the project issues were completed, the app navigation was clear, the intention of the app was clear, whether all features of the app worked, and to achieve general feedback on the UI and UX. 
 
 The scope: 
 Users could- 
 1. View the content of the app.
 2. If they could interact (like and comment) with the content.
-3. If they could perfom CRUD functionalities.
+3. If they could perform CRUD functionalities.
 4. If they could navigate the application.
 5. If all the links worked and all the buttons fire correctly.
 6. If they could sign up, and sign in and out of the site.
@@ -135,20 +135,20 @@ Site admin could
 3. Create draft posts to complete later
 
 Test Methodology:
-All the tests performed were done manually. The users were sent a link with a list of intstructions and they reported back their results.
+All the tests performed were done manually. The users were sent a link with a list of instructions and they reported back their results.
  
 ### User test
 
-According to the feedback my users gave me the navigation of the application was simple to understand and navigate, and furthermore the understood what the intention of the app was from the momment they landed on the home page. User were asked to sign up, like a post and comment on a post. Furthermore, they were tasked with editing and then deleting a post which they did successfully. The users said they enjoyed the app and that it was a very similar experience to social media which made it relatable but with less distraction.
+According to the feedback my users gave me the navigation of the application was simple to understand and navigate, and furthermore the understood what the intention of the app was from the moment they landed on the home page. User were asked to sign up, like a post and comment on a post. Furthermore, they were tasked with editing and then deleting a post which they did successfully. The users said they enjoyed the app and that it was a very similar experience to social media which made it relatable but with less distraction.
 
-I too did these manual test to ensure that the apps features works as expected. and below are the results:
+I too did these manual test to ensure that the apps features works as expected. And below are the results:
 
 ### Admin test
 
 ![an image of the testing done on the app](static/images/data.png)
-Figure 1: Admin pannel
+Figure 1: Admin panel
 
-I created a super user to make post on the app and view the data from the back end(see Figure 1). And this all worked. All post on the app where upload via the admin panel and I could view users who signed up to the app and their comments. In addition, I could see if they joined the mailing list or not.
+I created a super user to make post on the app and view the data from the backend (see Figure 1). And this all worked. All post on the app where upload via the admin panel and I could view users who signed up to the app and their comments. In addition, I could see if they joined the mailing list or not.
 
 ### Signup, sign-in and sign-out test
 
@@ -158,13 +158,13 @@ Figure 2: sign-up
 ![an image of the testing done on the app](static/images/signout.png)
 Figure 3: sign-out
 
-I created also logged in as a regular user(Pokemon) in the front end to ensure that the post are rendering as expected(see Figure 2), that all the pages are displaying with no broken links, and that the UI looks as intended. The signup function works, I could sign in and out(see Figure 3) without any issues.
+I created also logged in as a regular user ( Pokemon) in the front end to ensure that the post are rendering as expected (see Figure 2), that all the pages are displaying with no broken links, and that the UI looks as intended. The signup function works, I could sign in and out (see Figure 3) without any issues.
 
 ### Home page test
 ![an image of the testing done on the app](static/images/homepage.png)
 Figure 4: Home page view
 
-I started by testing that all the links in the navbar and the home page buttons work and lead to where they are intended and they did(see Figure 4). The logo will send you home, as will the home link in navbar. The ink, painting, and pencil links in the navbar and the homepage buttons all lead to their respective pages.
+I started by testing that all the links in the navbar and the home page buttons work and lead to where they are intended and they did (see Figure 4). The logo will send you home, as will the home link in navbar. The ink, painting, and pencil links in the navbar and the homepage buttons all lead to their respective pages.
 
 ### Art page test
 ![an image of the testing done on the app](static/images/gridview.png)
@@ -176,7 +176,7 @@ Figure 6: Art page view for Ink
 ![an image of the testing done on the app](static/images/gridview2.png)
 Figure 7: Art page view for Pencil
 
-Using the account of the fake user I created I test to see if all the art view were displaying and that the images were rendering properly(see Figure 5, 6, & 7). All the images were rending properly. I did however discover that the link cound tag was displaying unwanted text when the user is logoed out to I had to fix that.
+Using the account of the fake user I created I test to see if all the art view were displaying and that the images were rendering properly (see Figure 5, 6, & 7). All the images were rending properly. I did however discover that the like counter was displaying unwanted text when the user is not authenticated, so I had to fix that.
 
 ### Like, comment, edit, and delete test
 
@@ -187,23 +187,23 @@ Figure 8: test comment
 Figure 9: edited the text.
 
 ![an image of the testing done on the app](static/images/like.png)
-Figure 10: liked  post
+Figure 10: liked post
 
 ![an image of the testing done on the app](static/images/delete.png)
 Figure 11: deleted the comment
 
-I tested that like, comment, edit and delete buttons all work by going to the page of a single post and liked the post, created a comment, edited it and then deleted it. I created a test comment (see Figure 8). I then edited the text (see Figure 9).I liked the post, indicated by the black heart (see Figure 10). I then deleted the comment i edited earlier(see Figure 11).All of these buttons redirected me to the right page and executed exactly what i expected them to do in terms of CRUD functionality.
+I tested that like, comment, edit and delete buttons all work by going to the page of a single post and liked the post, created a comment, edited it and then deleted it. I created a test comment (see Figure 8). I then edited the text (see Figure 9).I liked the post, indicated by the black heart (see Figure 10). I then deleted the comment I edited earlier(see Figure 11).All of these buttons redirected me to the right page and executed exactly what I expected them to do in terms of CRUD functionality.
 
 ### Mailing list test
 ![an image of the testing done on the app](static/images/maillist2.png)
-Figure 12: Mailist option just below the buttons(ink, paintings and pencil)
+Figure 12: Mail list option just below the buttons (ink, paintings and pencil)
 
 ![an image of the testing done on the app](static/images/maillist.png)
-Figure 13: Mailist option just below the buttons(ink, paintings and pencil) with a success message below the nav bar
+Figure 13: Mail list option just below the buttons (ink, paintings and pencil) with a success message below the nav bar
 
-For the mailing list I created a fake user name, Max,max was able to join the mail list by clicking the join option and then the submit button(see Figure 12). After joining, Max was notified about this success(see Figure 13). From this test I could conclude that all the button in this form work as expected.
+For the mailing list I created a fake user namee Max. Max was able to join the mail list by clicking the join option and then the submit button (see Figure 12). After joining, Max was notified about this success (see Figure 13). From this test I could conclude that all the button in this form work as expected.
 
-### Accessibility and perfomance test
+### Accessibility and performance test
 ![an image of the validators that the app was run through](static/images/lighthouse.png)
 Figure 14: Lighthouse report
 
@@ -215,7 +215,7 @@ This app also meets the accessibility requirements of lighthouse in devtools. I 
 
 I created this entity relationship diagram to guide me in creating my data structure in the models.
 
-![an image of the mockups done during the design process](static/images/entityrelationshipdiagram.jpg)
+![an image of the mock-ups done during the design process](static/images/entityrelationshipdiagram.jpg)
 
 ### Wireframes
 I created these wireframes during the design process using Figma. Below are the images of each page found on the app.
@@ -239,10 +239,10 @@ I created these wireframes during the design process using Figma. Below are the 
 ![an image of the mock-ups done during the design process](static/images/wireframe6.jpg)
 
 ### Project task list 
-I made a project task list to ensure I was aware of all the reuirements and that all them were met(see figure A,B, and C). Below are the three list I worked with. 
+I made a project task list to ensure I was aware of all the requirements and that all them were met (see figure A, B, and C). Below are the three list I worked with. 
 
 ![an image of the mock-ups done during the design process](static/images/mockups.jpeg)
-Figure A - a list of the tasks that I had to perfom to bring the app to life. 
+Figure A - a list of the tasks that I had to perform to bring the app to life. 
 
 ![an image of the mock-ups done during the design process](static/images/mockups1.jpeg)
 Figure B - a list of the requirements to meet the pass criteria for the project. 
