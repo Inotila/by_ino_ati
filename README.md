@@ -355,7 +355,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 This work is the original work of Inotila Nghaamwa, however the following resources were used to supplement:
 
 ### Code
-I used similar coding approaches to that which was used for the i think and therefore I blog. Particularly the Post and comment method. I therefore added my own custom model in MailingList. In addition I used a similar timeout function to make the message alert timeout. 
+I used similar coding approaches to that which was used for the "I think and therefore I blog" project. Particularly the Post and comment method. I therefore added my own custom model in MailingList. In addition I used a similar timeout function to make the message alert timeout. 
 
 ### Media
 All images used are the property of Inotila Nghaamwa.
