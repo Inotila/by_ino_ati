@@ -120,6 +120,23 @@ The owner can user this to get data to communicate directly with site users.
 
 Through out the design process I did user tests with 5 individuals. These Test were a set of tasks which had an acceptance criteria for the users to achieve in order to see whether; to generally see if all the project issues were completed, the app navigation was clear, the intention of the app was clear, whether all features of the app worked, and to achieve general feed back on th UI and UX. 
 
+The scope: 
+Users could- 
+1. View the content of the app.
+2. If they could interact (like and comment) with the content.
+3. If they could perfom CRUD functionalities.
+4. If they could navigate the application.
+5. If all the links worked and all the buttons fire correctly.
+6. If they could sign up, and sign in and out of the site.
+
+Site admin could
+1. Manage site post
+2. Create, Read, Update, delete post and other site contents
+3. Create draft posts to complete later
+
+Test Methodology:
+All the tests performed were done manually. The users were sent a link with a list of intstructions and they reported back their results.
+ 
 ### User test
 
 According to the feedback my users gave me the navigation of the application was simple to understand and navigate, and furthermore the understood what the intention of the app was from the momment they landed on the home page. User were asked to sign up, like a post and comment on a post. Furthermore, they were tasked with editing and then deleting a post which they did successfully. The users said they enjoyed the app and that it was a very similar experience to social media which made it relatable but with less distraction.
