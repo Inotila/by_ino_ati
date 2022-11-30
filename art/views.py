@@ -119,7 +119,7 @@ def edit_comment(request, comment_id,):
     """
     comment = get_object_or_404(Comment, id=comment_id)
     if request.method == 'POST':
-        user_comments = CommentForm(request.POST, instance=comment)
+        user_comments = CommentForm(request.POST, instance=)
         if user_comments.is_valid():
             user_comments.save()
             messages.success(request, "You have successfully updated comment")
